@@ -1,0 +1,100 @@
+title: HubspotCompany
+x-stoplight:
+  id: mr4ie0o7buzmu
+type: object
+description: Fields to be written from Flex to the Hubspot Company Entity
+properties:
+  id:
+    type: string
+    x-stoplight:
+      id: 8gvq78v0i0wvt
+  flexCompanyId:
+    type: string
+    x-stoplight:
+      id: astj7bchi2djo
+    format: uuid
+  availableCredit:
+    type: number
+    x-stoplight:
+      id: 9v315avo2qt4j
+  creditBalance:
+    type: number
+    x-stoplight:
+      id: gp2xocqghztwf
+  creditLimit:
+    type: number
+    x-stoplight:
+      id: ubef3zr7ee9z2
+  lithicId:
+    type: string
+    x-stoplight:
+      id: hw78iehiii2fc
+    format: uuid
+  unitId:
+    type: string
+    x-stoplight:
+      id: b3hjif4158yjx
+    format: uuid
+  bankDeposits:
+    type: number
+    x-stoplight:
+      id: e79893k5nfe3e
+  creditCashbackRebateBalance:
+    type: number
+    x-stoplight:
+      id: 9rxzz0n9cmyh3
+  creditCashbackNearTermDays:
+    type: number
+    x-stoplight:
+      id: a9fjjingh7hxg
+  creditCashbackFarTermDays:
+    type: number
+    x-stoplight:
+      id: erdue87p23jh7
+  creditCashbackNearTermPct:
+    type: number
+    x-stoplight:
+      id: bo6ote17vnc12
+  creditCashbackFarTermPct:
+    type: number
+    x-stoplight:
+      id: 8c5miysmxtt2w
+  customerStartDate:
+    type: string
+    x-stoplight:
+      id: 3u0bue0ola07r
+    format: date
+  creditLineApproved:
+    type: string
+    x-stoplight:
+      id: j5n6gajv110w2
+    format: date-time
+  monthlySpend:
+    type: number
+    x-stoplight:
+      id: cniqece6lhcmk
+  firstTransactionDate:
+    type: string
+    x-stoplight:
+      id: hwou4ud0e4suq
+    format: date-time
+  creditUtilization:
+    type: number
+    x-stoplight:
+      id: yy0fxyd83j8jm
+  annualRevenue:
+    type: string
+    x-stoplight:
+      id: 7wh9wzylge99t
+  alfredUrl:
+    type: string
+    x-stoplight:
+      id: c2598v7cfamnn
+  foundedYear:
+    type: string
+    x-stoplight:
+      id: j4r30b681anw9
+  dbaName:
+    type: string
+    x-stoplight:
+      id: cssr6uaa5jj9q
