@@ -1,5 +1,5 @@
 ---
-stoplight-id: 58yak29dm7mqh
+stoplight-id: gmw1u0qhpx0mx
 tags: [Accounts, Authentication]
 internal: true
 ---

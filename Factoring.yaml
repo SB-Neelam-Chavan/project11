@@ -1,6 +1,6 @@
 openapi: 3.1.0
 x-stoplight:
-  id: 7w2hk9er0qovq
+  id: p2d1cy7k32lac
 info:
   title: Factoring
   version: '1.0'
@@ -30,7 +30,7 @@ components:
     AccountTerms:
       title: Account Terms
       x-stoplight:
-        id: jzoextibemugj
+        id: 7wsh007mhbby2
       type: object
       properties:
         termId:
@@ -58,7 +58,7 @@ components:
     Invoice:
       title: Invoice
       x-stoplight:
-        id: l0vs2kb9h82m4
+        id: olm7auh9vio2u
       type: object
       description: Represents an invoice
       properties:
@@ -100,7 +100,7 @@ components:
     InvoiceDecision:
       title: InvoiceDecision
       x-stoplight:
-        id: aaqdi4p72hw64
+        id: geslmsfaxycgf
       type: object
       description: Represents a factoring decision for an invoice
       properties:
@@ -141,8 +141,6 @@ components:
           properties:
             decision:
               $ref: '#/components/schemas/InvoiceDecision'
-      x-stoplight:
-        id: 0ey1e0gfgpzqy
   responses:
     AccountTerms:
       description: Represents the account terms
@@ -251,8 +249,6 @@ paths:
       responses:
         '200':
           $ref: '#/components/responses/AccountTerms'
-      x-stoplight:
-        id: cdcyt7qshpgfp
   '/factoring/{accountId}/invoices':
     parameters:
       - $ref: '#/components/parameters/accountId'
@@ -270,8 +266,6 @@ paths:
         - $ref: '#/components/parameters/pageSize'
         - $ref: '#/components/parameters/sort'
         - $ref: '#/components/parameters/nextToken'
-      x-stoplight:
-        id: c9ffsuhhp2chq
     post:
       summary: Create Invoice
       operationId: create-account-invoices
@@ -283,8 +277,6 @@ paths:
       description: Create an invoice for factoring
       requestBody:
         $ref: '#/components/requestBodies/SubmitInvoice'
-      x-stoplight:
-        id: 8f8ucdum207ni
   '/factoring/{accountId}/invoices/{invoiceId}':
     parameters:
       - $ref: '#/components/parameters/accountId'
@@ -298,8 +290,6 @@ paths:
           $ref: '#/components/responses/Invoice'
       operationId: get-account-invoice
       description: Get the specified invoice details
-      x-stoplight:
-        id: l5fhanrtge7o4
   '/factoring/{accountId}/invoices/{invoiceId}/attachment':
     parameters:
       - $ref: '#/components/parameters/accountId'
@@ -324,8 +314,6 @@ paths:
                   - attachment
       operationId: get-invoices-attachment
       description: Get a pre-signed url for the specified invoice attachment
-      x-stoplight:
-        id: c5jy9x62rwnju
     post:
       summary: Upload Attachment
       operationId: upload-account-invoices
@@ -341,8 +329,6 @@ paths:
             schema:
               type: object
         description: ''
-      x-stoplight:
-        id: tmejierog70sz
   /factoring/invoices:
     get:
       summary: List Invoices
@@ -359,8 +345,6 @@ paths:
         - $ref: '#/components/parameters/pageSize'
         - $ref: '#/components/parameters/sort'
         - $ref: '#/components/parameters/nextToken'
-      x-stoplight:
-        id: aox9u3notkhdt
   '/factoring/{accountId}/invoices/{invoiceId}/decision':
     parameters:
       - schema:
@@ -384,7 +368,7 @@ paths:
         '200':
           description: OK
       x-stoplight:
-        id: al7zowjf8m0e4
+        id: gdm8lj9c4cxek
       description: Create invoice decision for factoring
       requestBody:
         content:

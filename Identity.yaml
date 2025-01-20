@@ -1,6 +1,6 @@
 openapi: 3.1.0
 x-stoplight:
-  id: 72kdtohwolxh8
+  id: d1co6xlwdb0dg
 info:
   title: Identity
   version: '1.0'
@@ -38,8 +38,6 @@ paths:
       tags:
         - Accounts
       security: []
-      x-stoplight:
-        id: 19hv72irl2zra
     get:
       summary: List Accounts
       operationId: list-accounts
@@ -56,8 +54,6 @@ paths:
         - $ref: '#/components/parameters/nextToken'
         - $ref: '#/components/parameters/pageSize'
         - $ref: '#/components/parameters/active'
-      x-stoplight:
-        id: byh5684m9c7ff
   /identity/accounts/search:
     post:
       summary: Account Search
@@ -103,8 +99,6 @@ paths:
           name: sortBy
           description: The criteria the results are sorted by
       x-internal: true
-      x-stoplight:
-        id: 3ukj5il9jof9w
   /identity/accounts/migrate:
     post:
       summary: Migrate
@@ -130,8 +124,6 @@ paths:
                 format: uuid
       x-validation: false
       parameters: []
-      x-stoplight:
-        id: g1qjti7zn6cpc
   '/identity/accounts/{accountId}':
     parameters:
       - $ref: '#/components/parameters/accountId'
@@ -144,8 +136,6 @@ paths:
       tags:
         - Accounts
       description: Deactivates the specified account
-      x-stoplight:
-        id: 00u91eaqodkfl
     put:
       summary: Update Account
       operationId: update-account
@@ -167,8 +157,6 @@ paths:
                 name:
                   type: string
                   description: The name for the specified account
-      x-stoplight:
-        id: rbmiw2jzcwrfd
     get:
       summary: Get Account
       operationId: get-account
@@ -178,8 +166,6 @@ paths:
       tags:
         - Accounts
       description: Gets the specified account details
-      x-stoplight:
-        id: h8zlr8q3nnz16
   '/identity/accounts/{accountId}/products':
     parameters:
       - $ref: '#/components/parameters/accountId'
@@ -193,7 +179,7 @@ paths:
       tags:
         - Accounts
       x-stoplight:
-        id: k4s6stulup4o6
+        id: 1xe9ew8967u1j
   '/identity/accounts/{accountId}/applications/{applicationId}/withdraw':
     parameters:
       - $ref: '#/components/parameters/accountId'
@@ -207,7 +193,7 @@ paths:
         '200':
           description: OK
       x-stoplight:
-        id: y9pa5t00h4mcj
+        id: vcrgu1rz2dpeg
       description: User Withdraws the specified application
   '/identity/accounts/{accountId}/referrals':
     parameters:
@@ -227,8 +213,6 @@ paths:
         - $ref: '#/components/parameters/sort'
         - $ref: '#/components/parameters/nextToken'
       x-internal: true
-      x-stoplight:
-        id: jkc1rdq853ova
   '/identity/accounts/{accountId}/referred':
     parameters:
       - $ref: '#/components/parameters/accountId'
@@ -247,8 +231,6 @@ paths:
         - $ref: '#/components/parameters/sort'
         - $ref: '#/components/parameters/nextToken'
       x-internal: true
-      x-stoplight:
-        id: az8fx862yggh3
   '/identity/accounts/{accountId}/promocodes':
     parameters:
       - $ref: '#/components/parameters/accountId'
@@ -266,8 +248,6 @@ paths:
         - $ref: '#/components/parameters/pageSize'
         - $ref: '#/components/parameters/sort'
         - $ref: '#/components/parameters/nextToken'
-      x-stoplight:
-        id: tckno4mm80syu
   '/identity/accounts/{accountId}/invite':
     parameters:
       - $ref: '#/components/parameters/accountId'
@@ -284,8 +264,6 @@ paths:
         $ref: '#/components/requestBodies/AccountInvitation'
       parameters:
         - $ref: '#/components/parameters/invitationType'
-      x-stoplight:
-        id: lkhcxvssix5d6
     get:
       summary: List Invitations
       operationId: list-accounts-invites
@@ -305,8 +283,6 @@ paths:
           in: query
           name: accepted
           description: Filter whether the invite has been accepted
-      x-stoplight:
-        id: ndjy02zmhn0c4
   '/identity/accounts/{accountId}/invite/{personId}':
     parameters:
       - $ref: '#/components/parameters/accountId'
@@ -320,8 +296,6 @@ paths:
       tags:
         - Accounts
       description: Resend an invitation to the specified person
-      x-stoplight:
-        id: bpk4w1an04z6b
   '/identity/accounts/{accountId}/persons':
     parameters:
       - $ref: '#/components/parameters/accountId'
@@ -340,8 +314,6 @@ paths:
         - $ref: '#/components/parameters/sort'
         - $ref: '#/components/parameters/nextToken'
         - $ref: '#/components/parameters/active'
-      x-stoplight:
-        id: bgc3bggl3cen9
     post:
       summary: Create Person
       operationId: register-accounts-persons
@@ -353,8 +325,6 @@ paths:
       description: Register a person with the specified account
       requestBody:
         $ref: '#/components/requestBodies/PersonRegistration'
-      x-stoplight:
-        id: jd3d3vh21nkox
   '/identity/accounts/{accountId}/persons/{personId}':
     get:
       summary: Get Person
@@ -367,7 +337,7 @@ paths:
           $ref: '#/components/responses/CompletePerson'
       parameters: []
       x-stoplight:
-        id: hdodcrgaigy69
+        id: mna19gehzgf71
     parameters:
       - $ref: '#/components/parameters/personId'
       - $ref: '#/components/parameters/accountId'
@@ -383,7 +353,7 @@ paths:
       requestBody:
         $ref: '#/components/requestBodies/PersonUpdate'
       x-stoplight:
-        id: mva40hh1otsa2
+        id: yewa10ys7oda6
       x-mfa: 0
     delete:
       summary: Deactivate Person
@@ -395,7 +365,7 @@ paths:
         - Persons
       description: Deactivates a person
       x-stoplight:
-        id: 7azepmcndinlm
+        id: 1dc3uk1sds31r
   '/identity/accounts/{accountId}/persons/{personId}/prefill':
     parameters:
       - $ref: '#/components/parameters/accountId'
@@ -408,7 +378,7 @@ paths:
           $ref: '#/components/responses/PrefilledPersonResponse'
       operationId: prefill-persons
       x-stoplight:
-        id: e2t3n0qzwxdps
+        id: e390fonkoqdx5
       description: Attempt to prefill the specified person's information
       requestBody:
         $ref: '#/components/requestBodies/Prefill'
@@ -424,8 +394,6 @@ paths:
       operationId: prefill-persons-access
       tags:
         - Persons
-      x-stoplight:
-        id: 0kgwf8tvyh1cb
   '/identity/accounts/{accountId}/persons/{personId}/business-prefill':
     parameters:
       - $ref: '#/components/parameters/accountId'
@@ -439,8 +407,6 @@ paths:
       operationId: get-prefill-person-business
       tags:
         - Persons
-      x-stoplight:
-        id: 19vure9uee2do
   '/identity/accounts/{accountId}/persons/{personId}/phones':
     get:
       summary: List Person Phones
@@ -458,7 +424,7 @@ paths:
         - $ref: '#/components/parameters/nextToken'
         - $ref: '#/components/parameters/active'
       x-stoplight:
-        id: 957lmqjzcgbpz
+        id: 2mm8ui2fgs0dj
     parameters:
       - $ref: '#/components/parameters/personId'
       - $ref: '#/components/parameters/accountId'
@@ -477,7 +443,7 @@ paths:
       tags:
         - Persons
       x-stoplight:
-        id: 8qya1ahozpav3
+        id: bvu4cycgtio0a
       x-mfa: 0
   '/identity/accounts/{accountId}/persons/{personId}/phones/{phoneId}':
     get:
@@ -495,7 +461,7 @@ paths:
                 $ref: ./models/Phone.yaml
       parameters: []
       x-stoplight:
-        id: gf8rbwlf757nu
+        id: zl0w6nxsflda5
     parameters:
       - $ref: '#/components/parameters/personId'
       - $ref: '#/components/parameters/phoneId'
@@ -510,7 +476,7 @@ paths:
       tags:
         - Persons
       x-stoplight:
-        id: gihc2sxr2fnyf
+        id: ni4xok3bi96di
     patch:
       summary: Update a person's phone
       operationId: patch-person-single-phone
@@ -530,7 +496,7 @@ paths:
       tags:
         - Persons
       x-stoplight:
-        id: 44vgdiq7h6cvc
+        id: oq8141a2n36p1
   '/identity/accounts/{accountId}/persons/{personId}/addresses':
     get:
       summary: List a Person's Addresses
@@ -548,7 +514,7 @@ paths:
         - $ref: '#/components/parameters/nextToken'
         - $ref: '#/components/parameters/active'
       x-stoplight:
-        id: 0nhwlv3db3qsh
+        id: mzuvlf0gzpfz1
     parameters:
       - $ref: '#/components/parameters/personId'
       - $ref: '#/components/parameters/accountId'
@@ -567,7 +533,7 @@ paths:
       tags:
         - Persons
       x-stoplight:
-        id: i0jmn18va3pqd
+        id: 57n5pg0972xl8
   '/identity/accounts/{accountId}/persons/{personId}/addresses/{addressId}':
     parameters:
       - $ref: '#/components/parameters/accountId'
@@ -582,8 +548,6 @@ paths:
           $ref: '#/components/responses/Address'
       operationId: get-persons-address
       description: Retrieve the specified address for a person
-      x-stoplight:
-        id: ifzofd56m1f5q
     patch:
       summary: Update Person's Address
       operationId: patch-persons-address
@@ -595,8 +559,6 @@ paths:
       description: Update the specified address for a person
       requestBody:
         $ref: '#/components/requestBodies/AddressUpdate'
-      x-stoplight:
-        id: p6wsugg5i1tkz
     delete:
       summary: Deactivate Person's Address
       operationId: delete-persons-address
@@ -606,8 +568,6 @@ paths:
       tags:
         - Persons
       description: Deactivates the specified address for a person
-      x-stoplight:
-        id: rkk64t3lrnk05
   '/identity/accounts/{accountId}/persons/{personId}/emails':
     get:
       summary: List a Person's Emails
@@ -625,7 +585,7 @@ paths:
         - $ref: '#/components/parameters/nextToken'
         - $ref: '#/components/parameters/active'
       x-stoplight:
-        id: 244tjw9cm4it5
+        id: unynrqicdfwb2
     parameters:
       - $ref: '#/components/parameters/personId'
       - $ref: '#/components/parameters/accountId'
@@ -644,7 +604,7 @@ paths:
       tags:
         - Persons
       x-stoplight:
-        id: jo7p41umkn3ft
+        id: 27ldxrg7nyr90
   '/identity/accounts/{accountId}/persons/{personId}/documents':
     parameters:
       - $ref: '#/components/parameters/personId'
@@ -675,7 +635,7 @@ paths:
                         id: hdzcp7s592xpf
       operationId: listDocumentsForPerson
       x-stoplight:
-        id: cqflig7e6r07f
+        id: f3am7ioi0dh9u
       description: List Documents stored for a person
       parameters:
         - $ref: '#/components/parameters/nextToken'
@@ -691,7 +651,7 @@ paths:
         '200':
           description: OK
       x-stoplight:
-        id: 5vvewqn5l71nu
+        id: ija1sx5oxtssj
       requestBody:
         content:
           multipart/form-data:
@@ -740,7 +700,7 @@ paths:
                   - attachment
       operationId: getPersonsDocumentReference
       x-stoplight:
-        id: zlg8cxckxoxcj
+        id: 3q3qbxbl94xru
       description: Retrieve a pre-signed url referencing a stored Person Document
   '/identity/accounts/{accountId}/businesses':
     parameters:
@@ -760,8 +720,6 @@ paths:
         - $ref: '#/components/parameters/active'
       tags:
         - Businesses
-      x-stoplight:
-        id: uqn64rio7e6kl
     post:
       summary: Create Business
       operationId: register-businesses
@@ -774,8 +732,6 @@ paths:
       tags:
         - Businesses
       x-mfa: 0
-      x-stoplight:
-        id: akl1x7sp9zrry
   '/identity/accounts/{accountId}/businesses/{businessId}':
     parameters:
       - $ref: '#/components/parameters/businessId'
@@ -790,7 +746,7 @@ paths:
       operationId: get-business
       description: Gets the specified business details
       x-stoplight:
-        id: n7emm9es0lyil
+        id: i0fvc0tv0s0uq
     patch:
       summary: Update Business
       tags:
@@ -802,7 +758,7 @@ paths:
         '200':
           $ref: '#/components/responses/Business'
       x-stoplight:
-        id: oyogl6zk1c431
+        id: fb9rx0adue7ae
       description: Update the specified business
   '/identity/accounts/{accountId}/businesses/{businessId}/phones':
     parameters:
@@ -817,7 +773,7 @@ paths:
           $ref: '#/components/responses/PhoneList'
       operationId: list-businesses-phones
       x-stoplight:
-        id: g1s40vhuhcjtv
+        id: f1o5l76vmsl6t
       parameters:
         - $ref: '#/components/parameters/active'
         - $ref: '#/components/parameters/page'
@@ -834,7 +790,7 @@ paths:
         '201':
           $ref: '#/components/responses/CreatedPhone'
       x-stoplight:
-        id: 5u7asnvo0dkmn
+        id: vbf2kg5wz1r6z
       description: Create a phone for the specified business
       requestBody:
         content:
@@ -857,7 +813,7 @@ paths:
         $ref: '#/components/requestBodies/CreateAddress'
       description: Create and associate an address with the specified business
       x-stoplight:
-        id: 8wvyayho7ak5k
+        id: hxksnuiunluaf
     get:
       summary: List Business Addresses
       operationId: list-businesses-addresses
@@ -873,8 +829,6 @@ paths:
       tags:
         - Businesses
       description: Retrieve a list of addresses for the specified business
-      x-stoplight:
-        id: 5u4ycjj7o3lva
   '/identity/accounts/{accountId}/businesses/{businessId}/addresses/{addressId}':
     parameters:
       - $ref: '#/components/parameters/addressId'
@@ -890,7 +844,7 @@ paths:
       tags:
         - Businesses
       x-stoplight:
-        id: 6pnq5sd5drh8j
+        id: oyro8rbb1xbsa
     delete:
       summary: Deactivate Business Address
       operationId: delete-business-address
@@ -901,7 +855,7 @@ paths:
       tags:
         - Businesses
       x-stoplight:
-        id: cj9csq0e6ill6
+        id: nhehnnxea3icx
     patch:
       summary: Update Business Address
       operationId: update-businesses-addresses
@@ -913,8 +867,6 @@ paths:
       description: Update the specified address for a business
       requestBody:
         $ref: '#/components/requestBodies/AddressUpdate'
-      x-stoplight:
-        id: img9jsa9rtimn
   '/identity/accounts/{accountId}/businesses/{businessId}/owners':
     get:
       summary: List Business Owners
@@ -932,7 +884,7 @@ paths:
       operationId: list-business-owners
       description: Retrieve a list of owners for the specified business
       x-stoplight:
-        id: f6n8ztd7zcex3
+        id: mdka6ymx7847y
     parameters:
       - $ref: '#/components/parameters/businessId'
       - $ref: '#/components/parameters/accountId'
@@ -947,8 +899,6 @@ paths:
       description: Associate a person as an owner for the specified business
       requestBody:
         $ref: '#/components/requestBodies/CreateBusinessOwner'
-      x-stoplight:
-        id: hk2co5otuq1co
   '/identity/accounts/{accountId}/businesses/{businessId}/owners/{personId}':
     parameters:
       - $ref: '#/components/parameters/businessId'
@@ -965,7 +915,7 @@ paths:
       requestBody:
         $ref: '#/components/requestBodies/BusinessOwner'
       x-stoplight:
-        id: 4ll9cg4bylaap
+        id: 16hdzce4icidn
       description: Update the specified owner for a business
     delete:
       summary: Deactivate Business Owner
@@ -976,7 +926,7 @@ paths:
           description: No Content
       operationId: delete-business-owner
       x-stoplight:
-        id: 0vaqciae6dl7q
+        id: 97tobzquftq5k
       description: Deactivates the specified owner for a business
   '/identity/accounts/{accountId}/businesses/{businessId}/employees':
     parameters:
@@ -991,7 +941,7 @@ paths:
           $ref: '#/components/responses/EmployeeList'
       operationId: list-business-employees
       x-stoplight:
-        id: yt7lzdk7hj4t1
+        id: rh98j5vls0op1
       parameters:
         - $ref: '#/components/parameters/nextToken'
         - $ref: '#/components/parameters/page'
@@ -1008,7 +958,7 @@ paths:
           $ref: '#/components/responses/Employee'
       operationId: create-business-employee
       x-stoplight:
-        id: vcqnunyjr0v4e
+        id: kdqahxywf8bts
       description: Associate a person as an employee for the specified business
       requestBody:
         $ref: '#/components/requestBodies/CreateBusinessEmployee'
@@ -1026,7 +976,7 @@ paths:
           $ref: '#/components/responses/Employee'
       operationId: get-business-employee
       x-stoplight:
-        id: 9zbq73deaa0nz
+        id: wam5o4gebmlk0
       description: Gets the specified employee details
     patch:
       summary: Update Employee
@@ -1037,7 +987,7 @@ paths:
           $ref: '#/components/responses/Employee'
       operationId: update-business-employee
       x-stoplight:
-        id: 2q5dco4lykzw2
+        id: 8appnug9ubce9
       description: Update the specified employee
       requestBody:
         $ref: '#/components/requestBodies/Employee'
@@ -1050,7 +1000,7 @@ paths:
           description: No Content
       operationId: delete-business-employee
       x-stoplight:
-        id: hwyv4wjnv7gd6
+        id: 8518euuneudvz
       description: Deactivates the specified employee
   '/identity/accounts/{accountId}/businesses/{businessId}/groups':
     parameters:
@@ -1065,7 +1015,7 @@ paths:
           $ref: '#/components/responses/BusinessGroupList'
       operationId: list-business-groups
       x-stoplight:
-        id: nzhz2orjl1wd9
+        id: 2g2r5k0yk4dc6
       description: List the groups of the specified business
       parameters:
         - $ref: '#/components/parameters/nextToken'
@@ -1080,7 +1030,7 @@ paths:
         '201':
           $ref: '#/components/responses/BusinessGroup'
       x-stoplight:
-        id: 4kmxdtvwdi5yu
+        id: q9eucpoxuh1s6
       description: Create a group for the specified business
       tags:
         - Businesses
@@ -1103,7 +1053,7 @@ paths:
           $ref: '#/components/responses/BusinessGroup'
       operationId: get-business-group
       x-stoplight:
-        id: dd3423fna1i24
+        id: rrqprxvoa38xm
       description: Gets the specified business group
     patch:
       summary: Update Group
@@ -1114,7 +1064,7 @@ paths:
           $ref: '#/components/responses/BusinessGroup'
       operationId: update-business-group
       x-stoplight:
-        id: k3ybexllzo5ss
+        id: arr5ifxt65pdq
       requestBody:
         content:
           application/json:
@@ -1130,7 +1080,7 @@ paths:
           description: No Content
       operationId: delete-business-group
       x-stoplight:
-        id: 103futsk1dfg8
+        id: g6lldqgr4qs0e
       description: Deactivate the specified business group
   '/identity/accounts/{accountId}/businesses/{businessId}/groups/{groupId}/members':
     parameters:
@@ -1152,8 +1102,6 @@ paths:
         - $ref: '#/components/parameters/pageSize'
         - $ref: '#/components/parameters/sort'
         - $ref: '#/components/parameters/active'
-      x-stoplight:
-        id: msv1zqpex75xn
   '/identity/accounts/{accountId}/businesses/{businessId}/groups/{groupId}/members/{personId}':
     parameters:
       - $ref: '#/components/parameters/accountId'
@@ -1169,7 +1117,7 @@ paths:
           description: Created
       operationId: add-person-business-group
       x-stoplight:
-        id: kb27x16msxulf
+        id: 6a3dnvslgwpr2
       description: Register a person with the specified business group
     delete:
       summary: Remove Person from Business Group
@@ -1180,7 +1128,7 @@ paths:
           description: No Content
       operationId: remove-person-business-group
       x-stoplight:
-        id: sdxtzli4n9rjg
+        id: oj42k6n1gpmyf
       description: Remove a person from the specified business group
   '/identity/accounts/{accountId}/businesses/{businessId}/documents':
     parameters:
@@ -1215,7 +1163,7 @@ paths:
                   - metadata
       operationId: listBusinessDocuments
       x-stoplight:
-        id: vff0sqz2c4nj1
+        id: 65to3n8mlbe6d
       parameters:
         - $ref: '#/components/parameters/nextToken'
         - $ref: '#/components/parameters/page'
@@ -1231,7 +1179,7 @@ paths:
           description: OK
       operationId: createBusinessDocument
       x-stoplight:
-        id: 9qlhdrkecd4ja
+        id: p86tiv86d3igq
       requestBody:
         content:
           multipart/form-data:
@@ -1278,7 +1226,7 @@ paths:
                   - attachment
       operationId: getBusinessDocumentReference
       x-stoplight:
-        id: q8o3rf2g3yjha
+        id: cmcgrp277ctyu
       description: Retrieve a pre-signed url referencing a stored Business Document
     delete:
       summary: Delete Business Document
@@ -1289,7 +1237,7 @@ paths:
           description: No Content
       operationId: deleteBusinessDocument
       x-stoplight:
-        id: 2eh932q3qe23m
+        id: 9t82ycqyraaux
       description: Delete the specified business document
       x-internal: false
     patch:
@@ -1301,7 +1249,7 @@ paths:
           description: OK
       operationId: updateBusinessDocument
       x-stoplight:
-        id: ut0iko0qj7r14
+        id: nz7xt311vk3gi
       requestBody:
         content:
           application/json:
@@ -1333,7 +1281,7 @@ paths:
           $ref: '#/components/responses/BusinessFunctionList'
       operationId: list-businesses-functions
       x-stoplight:
-        id: wofomkrb06mzc
+        id: 6pwmrrvn8fc0f
       description: List persons assigned to the specified business function
       parameters:
         - $ref: '#/components/parameters/nextToken'
@@ -1374,7 +1322,7 @@ paths:
           $ref: '#/components/responses/BusinessFunction'
       operationId: assign-business-function
       x-stoplight:
-        id: zq7q2ju0mp3l3
+        id: kzasjx067g984
       description: Assigns a business function to the specified person
       requestBody:
         $ref: '#/components/requestBodies/AssignBusinessFunction'
@@ -1387,7 +1335,7 @@ paths:
           $ref: '#/components/responses/BusinessFunction'
       operationId: update-business-function
       x-stoplight:
-        id: premjur7rkq3x
+        id: eafrewmfy8dch
       description: Update a business function for the specified person
       requestBody:
         content:
@@ -1409,11 +1357,11 @@ paths:
         - $ref: '#/components/parameters/pageSize'
         - $ref: '#/components/parameters/sort'
         - $ref: '#/components/parameters/active'
-      x-stoplight:
-        id: vez6bim9b7tx1
   '/identity/accounts/{accountId}/trust':
     get:
       summary: List trust scores for all persons associated with the given account
+      x-stoplight:
+        id: 6axy7wt7v9ekl
       tags:
         - Accounts
       responses:
@@ -1438,8 +1386,6 @@ paths:
                   - metadata
                   - data
       operationId: listTrustScoresByCompanyId
-      x-stoplight:
-        id: ia8j99ds7zxdu
       description: List trust scores for all persons associated with the given company
       parameters:
         - $ref: '#/components/parameters/page'
@@ -1459,8 +1405,6 @@ paths:
       operationId: get-identity-me
       x-internal: false
       description: Get the details of the requester
-      x-stoplight:
-        id: 6rjdrkbvpqrbt
   /identity/me/accounts:
     get:
       summary: My Accounts
@@ -1478,8 +1422,6 @@ paths:
         - $ref: '#/components/parameters/nextToken'
         - $ref: '#/components/parameters/pageSize'
         - $ref: '#/components/parameters/active'
-      x-stoplight:
-        id: fjhfqst6ootxn
   /identity/authorize/token:
     post:
       summary: Request token
@@ -1494,8 +1436,6 @@ paths:
       tags:
         - Authorize
       x-validation: false
-      x-stoplight:
-        id: dea38d0aj17qe
     parameters: []
   /identity/authorize/token/exchange:
     post:
@@ -1521,8 +1461,6 @@ paths:
               required:
                 - personId
       parameters: []
-      x-stoplight:
-        id: f7v8e6ia2f266
   /identity/authorize/analytics:
     post:
       summary: Request Analytics Guest Token
@@ -1553,8 +1491,6 @@ paths:
               required:
                 - personId
                 - resourceId
-      x-stoplight:
-        id: l94v0m56putw8
     parameters: []
   /identity/authorize/start:
     post:
@@ -1572,8 +1508,6 @@ paths:
       requestBody:
         $ref: '#/components/requestBodies/AuthenticationPasswordless'
       x-validation: false
-      x-stoplight:
-        id: ri64idemc25t0
     parameters: []
   /identity/authorize/factors:
     post:
@@ -1589,8 +1523,6 @@ paths:
         $ref: '#/components/requestBodies/RegisterAuthenticationFactor'
       x-mfa: 0
       x-validation: false
-      x-stoplight:
-        id: twjsmxl2sedws
     parameters: []
     get:
       summary: Get Factors
@@ -1602,8 +1534,6 @@ paths:
       tags:
         - Authorize
       x-mfa: 0
-      x-stoplight:
-        id: 45sarmzrt1zvm
     delete:
       summary: Remove Factor
       operationId: delete-authorize-factor
@@ -1627,8 +1557,6 @@ paths:
               required:
                 - methodId
       x-mfa: 5
-      x-stoplight:
-        id: pnlm5cmmhcjg6
     put:
       summary: Request Factor Options
       operationId: request-factor-options
@@ -1642,8 +1570,6 @@ paths:
       x-mfa: 0
       x-validation: false
       description: Request factor initialization options for the specified method
-      x-stoplight:
-        id: 2ldmuj4w0d2c8
   /identity/authorize/factors/issue:
     post:
       summary: Issue Challenge
@@ -1658,8 +1584,6 @@ paths:
         $ref: '#/components/requestBodies/AuthenticationChallenge'
       x-validation: false
       x-mfa: 0
-      x-stoplight:
-        id: zzx6lyhd2mrvq
     parameters: []
   /identity/authorize/reset:
     post:
@@ -1674,8 +1598,6 @@ paths:
       security: []
       requestBody:
         $ref: '#/components/requestBodies/InitatePasswordReset'
-      x-stoplight:
-        id: 6a8uxv5tzchqj
     put:
       summary: Update Password
       operationId: update-password-from-link
@@ -1688,8 +1610,6 @@ paths:
       security: []
       requestBody:
         $ref: '#/components/requestBodies/PasswordUpdate'
-      x-stoplight:
-        id: unkxvxpjqtqvr
   /identity/authorize/redirect:
     get:
       summary: MagicLink Redirect
@@ -1725,8 +1645,6 @@ paths:
           name: token_type
           required: true
           description: The type of magic link
-      x-stoplight:
-        id: a5rbc2mmqdc98
   /identity/authorize/sessions:
     get:
       summary: Retrieve Sessions
@@ -1737,8 +1655,6 @@ paths:
           $ref: '#/components/responses/AuthenticationSessionList'
       operationId: get-authorize-sessions
       description: Get a list of currently active sessions
-      x-stoplight:
-        id: cfp67v9stboxp
   '/identity/authorize/sessions/{sessionId}':
     parameters:
       - schema:
@@ -1756,8 +1672,6 @@ paths:
           description: No Content
       operationId: delete-authorize-sessions
       description: Removes the specified session from being active
-      x-stoplight:
-        id: 0s9e02g2u9nid
   /identity/applications:
     get:
       summary: List Applications
@@ -1777,8 +1691,6 @@ paths:
         - $ref: '#/components/parameters/product'
         - $ref: '#/components/parameters/applicationStatus'
         - $ref: '#/components/parameters/reviewer'
-      x-stoplight:
-        id: 9w7woiuldk2v8
   '/identity/accounts/{accountId}/applications/{applicationId}':
     parameters:
       - $ref: '#/components/parameters/accountId'
@@ -1796,7 +1708,7 @@ paths:
                 $ref: '#/components/schemas/Application'
       operationId: getApplication
       x-stoplight:
-        id: dgy461g8gcp0o
+        id: xx8qq2a5o24a5
       description: Get Application
   '/identity/accounts/{accountId}/applications':
     parameters:
@@ -1810,7 +1722,7 @@ paths:
           description: OK
       operationId: createApplication
       x-stoplight:
-        id: dsptsysaea11y
+        id: h37bhy78qvtkm
       requestBody:
         content:
           application/json:
@@ -1878,7 +1790,7 @@ paths:
                     - note
       operationId: listApplicationRequestedDocuments
       x-stoplight:
-        id: e0l1o0grqmthe
+        id: qgbukk03zte03
       description: Retrieve a list of documents for the specified application
   '/identity/accounts/{accountId}/applications/{applicationId}/documents/{documentId}/upload':
     parameters:
@@ -1899,7 +1811,7 @@ paths:
           description: OK
       operationId: uploadApplicationRequestedDocument
       x-stoplight:
-        id: 6nocwd7d4qf4k
+        id: 7qkzd77sbrrkj
       requestBody:
         content:
           multipart/form-data:
@@ -1933,14 +1845,12 @@ paths:
             schema:
               $ref: ./models/GcpPubSubMessage.yaml
       x-validation: true
-      x-stoplight:
-        id: 0x3lcv2mkql33
 components:
   schemas:
     AuthenticationCore:
       title: Authentication Core
       x-stoplight:
-        id: mochggn0kng2v
+        id: e3kbww2sow6os
       type: object
       x-internal: true
       properties:
@@ -1991,8 +1901,6 @@ components:
         - $ref: '#/components/schemas/AuthenticationCore'
       description: Represents an application authentication request
       title: Client Credentials
-      x-stoplight:
-        id: ahy4nl5wb50tk
     PasswordAuthentication:
       allOf:
         - type: object
@@ -2018,8 +1926,6 @@ components:
         - $ref: '#/components/schemas/AuthenticationCore'
       description: Represents an authentication password request
       title: Password
-      x-stoplight:
-        id: i1nhxmd5jfh0v
     RefreshAuthentication:
       allOf:
         - type: object
@@ -2039,8 +1945,6 @@ components:
         - $ref: '#/components/schemas/AuthenticationCore'
       description: Represents an authentication refresh request
       title: Refresh
-      x-stoplight:
-        id: yq5k9nqdhl8x4
     CodeAuthentication:
       allOf:
         - type: object
@@ -2074,8 +1978,6 @@ components:
         - $ref: '#/components/schemas/AuthenticationCore'
       title: Code
       description: Represents an authentication code request
-      x-stoplight:
-        id: oevt9vwhqcyz0
     LinkAuthentication:
       allOf:
         - type: object
@@ -2105,8 +2007,6 @@ components:
         - $ref: '#/components/schemas/AuthenticationCore'
       title: Link
       description: Represents an authentication magic link request
-      x-stoplight:
-        id: 03mio2wiy7wkt
     ApiAuthentication:
       allOf:
         - type: object
@@ -2134,12 +2034,10 @@ components:
             - grant_type
         - $ref: '#/components/schemas/AuthenticationCore'
       title: Api
-      x-stoplight:
-        id: ox99v6qjlx2jy
     AuthenticationToken:
       title: Authentication Token
       x-stoplight:
-        id: 6946zzwech4k9
+        id: ht7l390xmxz2r
       type: object
       description: Represents an authentication token
       properties:
@@ -2172,7 +2070,7 @@ components:
     AnalyticsGuestToken:
       title: Analytics Guest Token
       x-stoplight:
-        id: 2bvo5h4f318ec
+        id: f02lr01pfpql2
       type: object
       description: Represents an authentication token
       properties:
@@ -2196,7 +2094,7 @@ components:
     AccountRegistration:
       title: Account Registration
       x-stoplight:
-        id: exhql18ghueuc
+        id: cq378vza6cljn
       type: object
       description: Represents an account registration
       properties:
@@ -2257,12 +2155,10 @@ components:
         - $ref: ./models/CoreModel.yaml
       description: Represents an account referral
       title: Referral
-      x-stoplight:
-        id: eaujc08u8tbkn
     AuthenticationPasswordless:
       title: Authentication Passwordless
       x-stoplight:
-        id: o1ounf3zommle
+        id: m45my8fugt2bb
       description: Represents the information needed to initialize a passwordless authentication
       oneOf:
         - $ref: '#/components/schemas/AuthenticationPasswordlessEmail'
@@ -2274,7 +2170,7 @@ components:
     AuthenticatorFactorSetup:
       title: Authenticator Factor Setup
       x-stoplight:
-        id: perscofqjucor
+        id: b2b9bff11e45f
       type: object
       description: Represents the information needed to finalize a factor registration
       properties:
@@ -2312,12 +2208,10 @@ components:
               readOnly: true
       title: Authentication Factor
       description: Represents an authentication factor
-      x-stoplight:
-        id: ajgadoqbwm59z
     AuthenticationFactorMethod:
       title: Authentication Factor Method
       x-stoplight:
-        id: k99etumvmvcs7
+        id: 3e890a56335d4
       type: object
       description: Represents authentication factor methods
       properties:
@@ -2328,7 +2222,7 @@ components:
     AuthenticationFactorChannel:
       title: Authentication Factor Channel
       x-stoplight:
-        id: etioexv29cl6t
+        id: 71bgzq9j8hoyu
       type: object
       description: Represents authentication factor channels
       properties:
@@ -2341,7 +2235,7 @@ components:
     AuthenticationFactorList:
       title: Authentication Factor List
       x-stoplight:
-        id: ej67wdsforifk
+        id: slvan42w6l95m
       type: object
       properties:
         knowledge:
@@ -2382,11 +2276,9 @@ components:
       required:
         - methodId
         - type
-      x-stoplight:
-        id: u7vhrqvk5vvw8
     OtpAuthenticationChallenge:
       x-stoplight:
-        id: qrpcyncg37q4m
+        id: f9s2jdapyvj1d
       description: Represents an OTP authentication challenge
       title: OtpAuthenticationChallenge
       allOf:
@@ -2411,7 +2303,7 @@ components:
     MagicLinkAuthenticationChallenge:
       title: MagicLinkAuthenticationChallenge
       x-stoplight:
-        id: pvfrk0c09afcf
+        id: yt99sfgncgbjr
       allOf:
         - $ref: '#/components/schemas/AuthenticationChallenge'
         - type: object
@@ -2437,7 +2329,7 @@ components:
     PasswordReset:
       title: Password Reset
       x-stoplight:
-        id: lvb5l1eh86mxd
+        id: 341264d626f6d
       type: object
       description: Represents a password reset
       properties:
@@ -2460,7 +2352,7 @@ components:
     PasswordUpdate:
       title: PasswordUpdate
       x-stoplight:
-        id: lleiems8a80m6
+        id: xefjegkjr8tq7
       type: object
       description: Represents a password update
       properties:
@@ -2486,7 +2378,7 @@ components:
     Application:
       title: Application
       x-stoplight:
-        id: pjuztkdz4u7zz
+        id: 5i3e1ocrsad73
       type: object
       description: Represents a product application
       properties:
@@ -2552,7 +2444,7 @@ components:
     Product:
       title: Product
       x-stoplight:
-        id: estwib9pa1h2i
+        id: 27zgd2us6xv0y
       type: object
       description: Represents a product
       properties:
@@ -2608,7 +2500,7 @@ components:
     AccountInvitation:
       title: AccountInvitation
       x-stoplight:
-        id: 77xkgtj4phxmw
+        id: h62qh6ynk7nz6
       description: Represents an account invitation
       allOf:
         - type: object
@@ -2705,7 +2597,7 @@ components:
     PersonDocument:
       title: PersonDocument
       x-stoplight:
-        id: x9kf2cc5aa7uc
+        id: muz57zo1m3ydj
       type: object
       properties:
         documentId:
@@ -2747,7 +2639,7 @@ components:
     PersonDocumentMetadata:
       title: PersonDocumentMetadata
       x-stoplight:
-        id: 31rcy61pxydf0
+        id: 2sa6q0h4ir28y
       type: object
       properties:
         documentName:
@@ -2760,7 +2652,7 @@ components:
     Prefill:
       title: Prefill
       x-stoplight:
-        id: l4aj6lebwy89p
+        id: gmqoh4i3wib8f
       type: object
       description: Represents a pre-fill data
       properties:
@@ -2804,8 +2696,6 @@ components:
         - prefilled
         - prefilledValues
         - addressSelection
-      x-stoplight:
-        id: 45gy3it6uw3sh
     PrefillAccess:
       title: Prefill Access
       type: object
@@ -2816,12 +2706,10 @@ components:
           description: 'True if a user can use prefill, false if they cannot'
       required:
         - canAccess
-      x-stoplight:
-        id: segics677f3oz
     AuthenticationSession:
       title: AuthenticationSession
       x-stoplight:
-        id: m3tlobxg4yptk
+        id: 0jkps5rk939kw
       type: object
       description: Represents an authentication session
       properties:
@@ -2883,7 +2771,7 @@ components:
     BusinessGroup:
       title: BusinessGroup
       x-stoplight:
-        id: fwpehyuxj3hx1
+        id: 1eq8ryyl8tq0i
       type: object
       properties:
         id:
@@ -2922,7 +2810,7 @@ components:
     BusinessDocument:
       title: BusinessDocument
       x-stoplight:
-        id: 76thb6qb07shf
+        id: 1a49jyq5s4g3k
       type: object
       properties:
         id:
@@ -2965,7 +2853,7 @@ components:
     BusinessDocumentMetadata:
       title: BusinessDocumentMetadata
       x-stoplight:
-        id: 785tux387qxd0
+        id: rdznaqx56ru4j
       type: object
       properties:
         documentName:
@@ -2978,7 +2866,7 @@ components:
     BusinessFunction:
       title: Business Function
       x-stoplight:
-        id: ddl7hrb5vdvac
+        id: wui5vomrliifp
       type: object
       description: Represents a business function assigned to person
       properties:
@@ -3014,7 +2902,7 @@ components:
     AccountMigration:
       title: AccountMigration
       x-stoplight:
-        id: dqd2c5pk53ozr
+        id: hhwy2s4hss8os
       type: object
       properties:
         companyId:
@@ -3036,7 +2924,7 @@ components:
     AccountSearch:
       title: AccountSearch
       x-stoplight:
-        id: o1wyvqp0fueaf
+        id: arrd5gbvic684
       description: Represents an account search result
       type: object
       properties:
@@ -3081,7 +2969,7 @@ components:
     Authentications:
       title: Authentications
       x-stoplight:
-        id: bp6ioulfytbwx
+        id: vkesfanpbeg3r
       anyOf:
         - $ref: '#/components/schemas/PasswordAuthentication'
           description: Password credentials
@@ -3097,7 +2985,7 @@ components:
     AccountCreditDetails:
       title: AccountCreditDetails
       x-stoplight:
-        id: l6fpruolvmm5c
+        id: 2y3lgpi5cd3b0
       type: object
       description: Represents an account's credit details
       properties:
@@ -3176,7 +3064,7 @@ components:
     AuthenticationRegisterFactor:
       title: Authentication Register Factor
       x-stoplight:
-        id: 6e2ojcfsbn7ep
+        id: e60kdpqve2mn8
       oneOf:
         - $ref: '#/components/schemas/AuthenticationRegisterPhoneFactor'
         - $ref: '#/components/schemas/AuthenticationRegisterPasswordFactor'
@@ -3191,7 +3079,7 @@ components:
     AuthenticationRegisterFactorCore:
       title: AuthenticationRegisterFactorCore
       x-stoplight:
-        id: dq228ww21aho7
+        id: x20wcj7nda0mm
       x-internal: true
       type: object
       description: Represents authentication factor methods
@@ -3203,7 +3091,7 @@ components:
     AuthenticationRegisterPhoneFactor:
       title: Register Phone
       x-stoplight:
-        id: zvtmmv9sbvvjq
+        id: vmhwftuxtlxx1
       allOf:
         - type: object
           x-stoplight:
@@ -3250,7 +3138,7 @@ components:
     AuthenticationRegisterPasswordFactor:
       title: Register Password
       x-stoplight:
-        id: kux8w6u8ss8yy
+        id: mbvbb9txzku6y
       allOf:
         - $ref: '#/components/schemas/AuthenticationRegisterFactorCore'
         - type: object
@@ -3277,7 +3165,7 @@ components:
     AuthenticationRegisterAuthenticatorFactor:
       title: Register Authenticator
       x-stoplight:
-        id: h95ddd37i4grn
+        id: jjoe2coloj10e
       allOf:
         - $ref: '#/components/schemas/AuthenticationRegisterFactorCore'
         - type: object
@@ -3303,7 +3191,7 @@ components:
     AuthenticationRegisterFidoFactor:
       title: Register Fido
       x-stoplight:
-        id: gfgvxom16i74v
+        id: fjlvqyro5dmkj
       allOf:
         - $ref: '#/components/schemas/AuthenticationRegisterFactorCore'
         - type: object
@@ -3327,7 +3215,7 @@ components:
     CreateBusinessOwner:
       title: CreateBusinessOwner
       x-stoplight:
-        id: apn0r7m4z1i32
+        id: zkiua4ynkqo51
       type: object
       properties:
         personId:
@@ -3349,7 +3237,7 @@ components:
     BusinessGroupMembership:
       title: BusinessGroupMembership
       x-stoplight:
-        id: jp2slmgwm9zay
+        id: bpuvg16ig3bxf
       type: object
       description: Represents a business group membership
       properties:
@@ -3380,7 +3268,7 @@ components:
     CreatedAccount:
       title: CreatedAccount
       x-stoplight:
-        id: 1l08hj2o56arg
+        id: ddllgm8z1nhb4
       type: object
       properties:
         accountId:
@@ -3402,7 +3290,7 @@ components:
     RegisterPasskeyFactor:
       title: RegisterPasskeyFactor
       x-stoplight:
-        id: kwz3awtczqztz
+        id: pin9j7xr1id43
       description: Represents a Passkey factor registration
       allOf:
         - $ref: '#/components/schemas/RegisterAuthenticationFactor'
@@ -3427,7 +3315,7 @@ components:
     InitializePasskeyFactor:
       title: InitializePasskeyFactor
       x-stoplight:
-        id: 1mtzzanjkf54q
+        id: lqdb1pgfpzj5t
       type: object
       properties:
         factorType:
@@ -3443,7 +3331,7 @@ components:
     AuthenticationFactorInitialization:
       title: AuthenticationFactorInitialization
       x-stoplight:
-        id: 8m17fpg28b0tr
+        id: m8cs4bminuqo8
       type: object
       description: Represents the information needed to complete initialization of a factor
       properties:
@@ -3457,7 +3345,7 @@ components:
     FidoAuthentication:
       title: Fido
       x-stoplight:
-        id: 9v8p2h30bton3
+        id: prmky6g8ytw7w
       allOf:
         - type: object
           properties:
@@ -3512,12 +3400,10 @@ components:
             - createdAt
       required:
         - personId
-      x-stoplight:
-        id: t4oyvfk1cc0nl
     PasskeyOptions:
       title: PasskeyOptions
       x-stoplight:
-        id: 428mkiwg43t9v
+        id: 1h5awjiabaapw
       type: object
       properties:
         options:
@@ -3533,7 +3419,7 @@ components:
     AuthenticationFactorMethodTypes:
       title: Authentication Factor Method Types
       x-stoplight:
-        id: k4iyqpoimndf7
+        id: wxil3x2ydgyaa
       type: string
       enum:
         - phone
@@ -3547,7 +3433,7 @@ components:
     AuthenticationFactorChannelTypes:
       title: Authentication Factor Channel Types
       x-stoplight:
-        id: p50eeevc0z1q8
+        id: l9khvxlq2395h
       type: string
       enum:
         - sms
@@ -3556,7 +3442,7 @@ components:
     AuthenticationPasswordlessCore:
       title: AuthenticationPasswordlessCore
       x-stoplight:
-        id: 1rylly1ni3v7r
+        id: 7ddtihijcqp6s
       type: object
       x-internal: true
       properties:
@@ -3584,7 +3470,7 @@ components:
     AuthenticationPasswordlessEmail:
       title: Passwordless Email
       x-stoplight:
-        id: atkuplcc6szuu
+        id: l3ebx46o260n4
       allOf:
         - $ref: '#/components/schemas/AuthenticationPasswordlessCore'
         - type: object
@@ -3608,7 +3494,7 @@ components:
     AuthenticationPasswordlessFido:
       title: Passwordless Fido
       x-stoplight:
-        id: e6hioxp6m14ju
+        id: ink3296a5wwg4
       allOf:
         - $ref: '#/components/schemas/AuthenticationPasswordlessCore'
         - type: object
@@ -3629,12 +3515,10 @@ components:
         - $ref: '#/components/schemas/AuthenticationFactorMethod'
           x-stoplight:
             id: qk9vxlkwty1in
-      x-stoplight:
-        id: 1sh4km723f9tz
     Invitation:
       title: Invitation
       x-stoplight:
-        id: ge5arwsv2d6ma
+        id: c39zli8bb5zda
       allOf:
         - type: object
           properties:
@@ -3678,7 +3562,7 @@ components:
     AuthenticationRegisterFactorOptions:
       title: AuthenticationRegisterFactorOptions
       x-stoplight:
-        id: 67ol8bj384bwj
+        id: mkijlb5h4of7f
       oneOf:
         - $ref: '#/components/schemas/AuthenticationRegisterFidoFactorOptions'
         - $ref: '#/components/schemas/AuthenticationRegisterAuthenticatorFactorOptions'
@@ -3687,7 +3571,7 @@ components:
     AuthenticationRegisterFidoFactorOptions:
       title: Register Fido Factor Options
       x-stoplight:
-        id: y18kk8ehv427m
+        id: em2ozm6pncmpx
       allOf:
         - $ref: '#/components/schemas/AuthenticationRegisterFactorCore'
         - type: object
@@ -3713,7 +3597,7 @@ components:
     AuthenticationRegisterAuthenticatorFactorOptions:
       title: Register Authenticator Factor Options
       x-stoplight:
-        id: gzaq5u6pj0wbq
+        id: eq3j6ue467zar
       allOf:
         - $ref: '#/components/schemas/AuthenticationRegisterFactorCore'
         - type: object
@@ -3732,7 +3616,7 @@ components:
     AuthenticationFidoAttestationOptions:
       title: Fido Attestation Options
       x-stoplight:
-        id: 7c6jvi7rj4a0u
+        id: jzqom8gam68v3
       type: object
       description: 'Represents the attestation options for a [fido](https://fidoalliance.org/) factor'
       properties:
@@ -3826,7 +3710,7 @@ components:
     AuthenticationFidoAssertionOptions:
       title: Fido Assertion Options
       x-stoplight:
-        id: f2cmuhssyhy2t
+        id: h2v8xtszd61az
       type: object
       description: 'Represents the assertion options for a [fido](https://fidoalliance.org/) factor'
       properties:
@@ -3872,7 +3756,7 @@ components:
     AuthenticationAuthenticatorOptions:
       title: Authenticator Options
       x-stoplight:
-        id: 2rik0q4dw03kr
+        id: 7y9lyjsuqxun2
       type: object
       properties:
         secret:
@@ -3886,7 +3770,7 @@ components:
     PublicKeyCredential:
       title: PublicKeyCredential
       x-stoplight:
-        id: 6rj8fwxig59fk
+        id: rklrenckc4ku2
       type: object
       properties:
         id:
@@ -3918,7 +3802,7 @@ components:
     PublicKeyCredentialWithAttestation:
       title: PublicKey Credential With Attestation
       x-stoplight:
-        id: dqlunkzp3l4p9
+        id: ba3jylczikgkc
       allOf:
         - $ref: '#/components/schemas/PublicKeyCredential'
         - type: object
@@ -3939,7 +3823,7 @@ components:
     PublicKeyCredentialWithAssertion:
       title: PublicKey Credential With Assertion
       x-stoplight:
-        id: s81omivuje9e5
+        id: 7gd4qdp0xjgo9
       allOf:
         - $ref: '#/components/schemas/PublicKeyCredential'
           x-stoplight:
@@ -3960,7 +3844,7 @@ components:
     SimpleClientExtensionResults:
       title: SimpleClientExtensionResults
       x-stoplight:
-        id: fuy104hn4xfry
+        id: rqspm8plypks0
       type: object
       properties:
         appid:
@@ -3985,7 +3869,7 @@ components:
     AuthenticatorAttestationResponse:
       title: AuthenticatorAttestationResponse
       x-stoplight:
-        id: n7fz805ov6ggb
+        id: wzfwm40slgsc6
       type: object
       properties:
         clientDataJSON:
@@ -4010,7 +3894,7 @@ components:
     AuthenticatorTransport:
       title: AuthenticatorTransport
       x-stoplight:
-        id: 50d9mw2bip2zz
+        id: ewj440x101mfr
       type: string
       enum:
         - hybrid
@@ -4021,7 +3905,7 @@ components:
     PublicKeyCredentialDescriptor:
       title: PublicKeyCredentialDescriptor
       x-stoplight:
-        id: ohfe8zb1tdgfy
+        id: j9cmtlpvaqcw6
       type: object
       properties:
         type:
@@ -4048,7 +3932,7 @@ components:
     AuthenticatorAssertionResponse:
       title: AuthenticatorAssertionResponse
       x-stoplight:
-        id: 0y8y94ykzrdnu
+        id: h11rjp3ciwraa
       type: object
       properties:
         clientDataJSON:

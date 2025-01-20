@@ -1,6 +1,6 @@
 openapi: 3.1.0
 x-stoplight:
-  id: yl96twlpdgbwo
+  id: yl98xxlkvjr2t
 info:
   title: Events
   version: '1.0'
@@ -39,8 +39,6 @@ paths:
         - Webhooks
         - Events
       parameters: []
-      x-stoplight:
-        id: g73x7gx6ukn1o
   /events/plaid/onExit:
     parameters: []
     post:
@@ -52,7 +50,7 @@ paths:
         '201':
           description: Created
       x-stoplight:
-        id: 5v3m1m0owncm6
+        id: l5mctzzyed04x
       description: 'Post data returned by Plaid''s onExit callback; https://plaid.com/docs/link/web/#onexit'
       requestBody:
         description: onExit payload
@@ -209,7 +207,7 @@ paths:
                           x-stoplight:
                             id: 7h7n8v6yk7ctt
       x-stoplight:
-        id: x63r3vgmlyfg3
+        id: rddmdju38hpqy
       parameters:
         - $ref: '#/components/parameters/page'
         - $ref: '#/components/parameters/sort'
@@ -221,7 +219,7 @@ components:
     ListMetricResult:
       title: ListMetricResult
       x-stoplight:
-        id: s4et04w8rhaxj
+        id: kp16i4jl8xqql
       type: object
       description: 'For a given metric, result is a timeseries of that metric with accompanying metadata'
       properties:
@@ -248,7 +246,7 @@ components:
     MetricHistory:
       title: MetricHistory
       x-stoplight:
-        id: ga764rwsgyq96
+        id: xlm8dh5wzblxe
       type: object
       properties:
         date:

@@ -1,6 +1,6 @@
 openapi: 3.1.0
 x-stoplight:
-  id: tmsfu92a2anju
+  id: m7mcr7boyh1hv
 info:
   title: Accounting
   version: '1.0'
@@ -46,7 +46,7 @@ paths:
                     x-stoplight:
                       id: 788r9khmk37li
       x-stoplight:
-        id: h15kpz8ubab96
+        id: ngia86d5gypdo
       description: Passes a public token to facilitate the exchange of an expense link access_token.
       requestBody:
         content:
@@ -73,7 +73,7 @@ paths:
         '200':
           description: OK
       x-stoplight:
-        id: r5tegykdrqm0q
+        id: ohtckgow5z897
       description: 'Expense webhook for receiving creation and updates of links, accounts and vendors.'
       requestBody:
         description: 'Receive webhook content for updating and creating of either link, accouting or vendor data.'
@@ -127,7 +127,7 @@ paths:
                   - links
       operationId: expense-links
       x-stoplight:
-        id: wx4fjgbz31gt1
+        id: xiamdubk1kujp
       description: Returns a list of expense links.
       tags:
         - Expenses
@@ -151,7 +151,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/SyncedExpenses'
       x-stoplight:
-        id: lb1pz0zda7kyo
+        id: wsjribn2iihe1
       description: Returns list of synced expense items.
       requestBody:
         description: Takes a list of transaction ids.
@@ -202,7 +202,7 @@ paths:
                 required:
                   - transactions
       x-stoplight:
-        id: b20zopa3he5q9
+        id: z0wio0ohxvjp5
       description: Creates a new expense item.
       requestBody:
         description: List of transactions to sync
@@ -245,7 +245,7 @@ paths:
                 required:
                   - transactions
       x-stoplight:
-        id: f5h7t88s2luyw
+        id: juocxgqj4c63y
       description: Modifies an existing expense item.
       requestBody:
         description: List of transactions and account ids to patch
@@ -280,7 +280,7 @@ paths:
         '200':
           description: OK
       x-stoplight:
-        id: q937hxkm1iwmx
+        id: 5xsz8pb01x39h
       description: Delete an expense link.
       tags:
         - Expenses
@@ -294,7 +294,7 @@ paths:
           description: OK
       operationId: createExpenseReceipt
       x-stoplight:
-        id: q43zboe7kuz06
+        id: 6n5hqme9mzooa
       description: creates an expense attachment for the given invoice if there is a matching expense and autosync is on
       parameters:
         - schema:
@@ -331,7 +331,7 @@ paths:
                 $ref: '#/components/schemas/ExpenseMetrics'
       operationId: get-expense-metrics
       x-stoplight:
-        id: a6pgi0pw3d2x8
+        id: ww731a0sf49t0
       description: Returns a customers account integration along with transactions information.
       parameters: []
     parameters:
@@ -367,7 +367,7 @@ paths:
                       id: ht5kd88wapm6w
       operationId: post-expenses-category-to-card
       x-stoplight:
-        id: htws4hyjbg241
+        id: m45m6xovsekak
       description: Maps a category to a card id.
       requestBody:
         content:
@@ -410,7 +410,7 @@ paths:
                       id: pp7pgbmxsjjfm
       operationId: patch-expenses-category-to-card
       x-stoplight:
-        id: sxoyo6qsiw1j8
+        id: f9v29bb4anha5
       description: Edit a mapped category to card id.
       requestBody:
         content:
@@ -462,7 +462,7 @@ paths:
                         id: zou7reb32u97h
       operationId: get-expenses-category-to-card
       x-stoplight:
-        id: duio59k96jpgg
+        id: vugtm2ypsbvzj
       description: Returns a mapped category to card id.
   '/accounting/expenses/connections/{connectionId}/cards/{cardId}':
     parameters:
@@ -502,7 +502,7 @@ paths:
                       id: z94220v6q3hmg
       operationId: get-expenses-category-to-card-id
       x-stoplight:
-        id: favx3tuhpbvvb
+        id: a8m3pr4pgxpxb
   '/accounting/expenses/connections/{connectionId}/backfill/{businessId}':
     parameters:
       - schema:
@@ -539,7 +539,7 @@ paths:
                       type: string
       operationId: post-backfill-integration
       x-stoplight:
-        id: i53o7ygt8kwqc
+        id: bqs6y4jdem9t3
   '/accounting/accounts/{accountId}/spendplans':
     parameters:
       - $ref: '#/components/parameters/accountId'
@@ -564,7 +564,7 @@ paths:
                       id: jufg6jr3wqcq6
       operationId: createSpendPlan
       x-stoplight:
-        id: fp0b4osn3hgc0
+        id: lnpsam1j9uw9f
       requestBody:
         $ref: '#/components/requestBodies/CreateSpendPlanBody'
     get:
@@ -576,7 +576,7 @@ paths:
           $ref: '#/components/responses/GetSpendPlans'
       operationId: getSpendPlans
       x-stoplight:
-        id: 2eck8djtafd3w
+        id: akic6ev6mwb9c
   '/accounting/accounts/{accountId}/spendplans/admin/overview':
     parameters:
       - $ref: '#/components/parameters/accountId'
@@ -589,7 +589,7 @@ paths:
           $ref: '#/components/responses/GetSpendPlansAdmin'
       operationId: getSpendPlansAdmin
       x-stoplight:
-        id: rx7vryhy25zvy
+        id: 5277kajpji6q0
   '/accounting/accounts/{accountId}/spendplans/{spendPlanId}/admin':
     parameters:
       - $ref: '#/components/parameters/accountId'
@@ -603,7 +603,7 @@ paths:
           $ref: '#/components/responses/GetSpendPlanAdmin'
       operationId: getSpendPlanAdmin
       x-stoplight:
-        id: 0y99r818km6ca
+        id: 5277htjpji6q1
   '/accounting/accounts/{accountId}/cards/{cardId}/spendplans':
     parameters:
       - $ref: '#/components/parameters/accountId'
@@ -617,7 +617,7 @@ paths:
           $ref: '#/components/responses/GetSpendPlans'
       operationId: getSpendPlansByCardId
       x-stoplight:
-        id: 44qrodjl0jwtf
+        id: wlvabcdh7owsz
   '/accounting/accounts/{accountId}/spendplans/{spendPlanId}':
     parameters:
       - $ref: '#/components/parameters/accountId'
@@ -631,7 +631,7 @@ paths:
           $ref: '#/components/responses/GetSpendPlan'
       operationId: getSpendPlan
       x-stoplight:
-        id: uij0xg0jc8yzt
+        id: wlvgxcph7owsz
     patch:
       summary: Update spend plan
       tags:
@@ -653,7 +653,7 @@ paths:
                       id: jufg6jr3fhcq6
       operationId: updateSpendPlan
       x-stoplight:
-        id: 4sscq1ic44b4i
+        id: znxn4zs82ig3i
       requestBody:
         $ref: '#/components/requestBodies/UpdateSpendPlanBody'
     delete:
@@ -665,7 +665,7 @@ paths:
           description: OK
       operationId: deleteSpendPlan
       x-stoplight:
-        id: esa258ql4m0wf
+        id: amns4zs82ig3i
   '/accounting/accounts/{accountId}/spendplans/{spendPlanId}/limits':
     parameters:
       - $ref: '#/components/parameters/accountId'
@@ -679,7 +679,7 @@ paths:
           $ref: '#/components/responses/GetSpendPlanLimits'
       operationId: getSpendPlanLimits
       x-stoplight:
-        id: qn3jtfgf2t39e
+        id: 2h2strykcevh3
   '/accounting/accounts/{accountId}/spendplans/{spendPlanId}/cards':
     parameters:
       - $ref: '#/components/parameters/accountId'
@@ -693,7 +693,7 @@ paths:
           $ref: '#/components/responses/GetSpendPlanCards'
       operationId: getSpendPlanCards
       x-stoplight:
-        id: uhlksukm5554e
+        id: uxgbi2tr2p0vj
   '/accounting/accounts/{accountId}/spendplans/{spendPlanId}/transactions':
     parameters:
       - $ref: '#/components/parameters/accountId'
@@ -707,7 +707,7 @@ paths:
           $ref: '#/components/responses/GetSpendPlanTransactions'
       operationId: getSpendPlanTransactions
       x-stoplight:
-        id: dbm6g4ts24yda
+        id: 8ydw9xlxps26i
   '/accounting/accounts/{accountId}/spendplans/{spendPlanId}/transactions/admin':
     parameters:
       - $ref: '#/components/parameters/accountId'
@@ -721,7 +721,7 @@ paths:
           $ref: '#/components/responses/GetSpendPlanTransactions'
       operationId: getSpendPlanTransactionsAdmin
       x-stoplight:
-        id: cfd0ocgc1c1lp
+        id: 8ydw9uwups26j
   '/accounting/expenses/connections/{connectionId}/settings':
     parameters:
       - schema:
@@ -743,7 +743,7 @@ paths:
                 $ref: '#/components/schemas/ExpenseLink'
       operationId: patch-accounting-settings
       x-stoplight:
-        id: t4nlsibn2rryc
+        id: acd51i29p7h3z
       description: |
         Patch integration settings
       requestBody:
@@ -781,7 +781,7 @@ paths:
                       id: 72q2n8qasrw9e
       operationId: get-accounting-bankfeeds-otp
       x-stoplight:
-        id: fhhc68v6yycpn
+        id: 4bz78j1ibrh26
       tags:
         - BankFeeds
       x-internal: true
@@ -809,7 +809,7 @@ paths:
                     id: nbk8gxfy3dtho
       operationId: get-accounting-coa
       x-stoplight:
-        id: bv223ittvil2p
+        id: ezh3jjlwag2u5
       description: ''
     patch:
       summary: Patch chart of accounts
@@ -828,7 +828,7 @@ paths:
                     id: jcwjxomk3s7qy
       operationId: patch-accounting-coa
       x-stoplight:
-        id: k4hmn0off98cl
+        id: elbj05pvgifx1
       requestBody:
         content:
           application/json:
@@ -896,7 +896,7 @@ paths:
                         id: 9iahrprbzhswy
       operationId: get-accounting-commerce-metric
       x-stoplight:
-        id: a5gjxl38otf63
+        id: gta6zy63328lc
       description: Fetch commerce customer metrics.
       tags:
         - Commerce
@@ -922,7 +922,7 @@ paths:
           description: OK
       operationId: post-accounting-commerce-metrics
       x-stoplight:
-        id: vazmrzay1fsyr
+        id: sybdahi22unrs
       description: Process all links and pull metrics
       x-internal: true
       requestBody:
@@ -949,7 +949,7 @@ paths:
                       id: 9tzatbkuu44uy
       operationId: get-accounting-commerce-products
       x-stoplight:
-        id: 3ej0cst9hjmq1
+        id: oavoxm0eye2wd
       description: get commerce products
     parameters:
       - schema:
@@ -987,7 +987,7 @@ paths:
                       id: cge8p4e5gif3s
       operationId: get-accounting-commerce-orders
       x-stoplight:
-        id: nzdd6yu7dy294
+        id: sj62i9ijrmi9n
       description: get commerce orders
     parameters:
       - schema:
@@ -1035,7 +1035,7 @@ paths:
                       type: string
       operationId: createTwispAccountEntities
       x-stoplight:
-        id: tdstp0o72twfi
+        id: htwvf7ulbck87
       description: Migrate account for spendplans
       x-internal: true
       requestBody:
@@ -1067,7 +1067,7 @@ paths:
                       type: string
       operationId: createTwispAccountEntitiesForAllAccounts
       x-stoplight:
-        id: t7mcex0yqr1yh
+        id: wz0m3ar27tq8z
       description: Migrate all spendplans
       x-internal: true
       requestBody:
@@ -1097,7 +1097,7 @@ paths:
           description: OK
       operationId: linkCardToSpendPlan
       x-stoplight:
-        id: nq8l1wis7l0bl
+        id: 9mtnmfhqqjdnp
       requestBody:
         content:
           application/json:
@@ -1138,7 +1138,7 @@ paths:
           description: OK
       operationId: unlinkCardFromSpendPlan
       x-stoplight:
-        id: 2u7h9r2eafmdv
+        id: 85pnbtm9e4m3c
   '/accounting/accounts/{accountId}/spendplans/{spendPlanId}/link/members/{personId}':
     parameters:
       - $ref: '#/components/parameters/accountId'
@@ -1156,7 +1156,7 @@ paths:
           description: OK
       operationId: linkMemberToSpendPlan
       x-stoplight:
-        id: tdez90f6mux6i
+        id: d63fzr4kkz7ba
   '/accounting/accounts/{accountId}/spendplans/{spendPlanId}/unlink/members/{personId}':
     parameters:
       - $ref: '#/components/parameters/accountId'
@@ -1172,7 +1172,7 @@ paths:
           description: OK
       operationId: unlinkMemberFromSpendPlan
       x-stoplight:
-        id: pt61lwtd268pq
+        id: lurr2pgk2auod
   '/accounting/accounts/{accountId}/spendplans/{spendPlanId}/unlink/managers/{personId}':
     parameters:
       - $ref: '#/components/parameters/accountId'
@@ -1188,7 +1188,7 @@ paths:
           description: OK
       operationId: unlinkManagerFromSpendPlan
       x-stoplight:
-        id: 52qdo04fmgss4
+        id: mlaxitin3sjuo
   '/accounting/accounts/{accountId}/spendplans/{spendPlanId}/link/managers/{personId}':
     parameters:
       - $ref: '#/components/parameters/accountId'
@@ -1206,7 +1206,7 @@ paths:
         $ref: '#/components/requestBodies/LinkSpendPlanManagerBody'
       operationId: linkManagerToSpendPlan
       x-stoplight:
-        id: 3e055hzvji7h2
+        id: 7px2mm3e75fzy
   '/accounting/accounts/{accountId}/spendplans/{spendPlanId}/default':
     parameters:
       - $ref: '#/components/parameters/accountId'
@@ -1220,7 +1220,7 @@ paths:
           description: OK
       operationId: patch-accounting-spendplans-default
       x-stoplight:
-        id: 3qibj1ft2kmzp
+        id: 3f1digo8nn0gd
       description: Set default spend plan
       requestBody:
         content:
@@ -1252,7 +1252,7 @@ paths:
                 $ref: '#/components/schemas/SpendPlanRequestFunds'
       operationId: post-accounting-spendplans-request-funds
       x-stoplight:
-        id: o449r0ellmtox
+        id: 4mnl27nuhkief
       requestBody:
         content:
           application/json:
@@ -1287,7 +1287,7 @@ paths:
                     id: jvkhi6vtgb2fx
       operationId: get-accounting-spendplans-view-funds
       x-stoplight:
-        id: sow2nryge71cg
+        id: 6uix4gdrr44pd
   '/accounting/accounts/{accountId}/spendplans/{spendPlanId}/requestfunds/{requestId}':
     parameters:
       - $ref: '#/components/parameters/accountId'
@@ -1329,7 +1329,7 @@ paths:
                     format: uuid
       operationId: decisionFundsRequest
       x-stoplight:
-        id: lahzvtyt678ja
+        id: 3pthoz49rkeut
       requestBody:
         content:
           application/json:
@@ -1592,7 +1592,7 @@ paths:
                                 id: nup58cy3guios
       operationId: get-accounting-accounts-payable
       x-stoplight:
-        id: qtl571r3fs388
+        id: mdbasyefpwcqs
       description: 'Internal endpoint to retrive accounts payable vendors, accounts, classes, departments, locations'
       x-internal: true
   '/accounting/account/{accountId}/expenses/connections/{connectionId}/link':
@@ -1620,7 +1620,7 @@ paths:
                 $ref: '#/components/schemas/Connection'
       operationId: patch-integration-link
       x-stoplight:
-        id: i9a7kuebtp8wl
+        id: x14uvlzd8uzza
       description: Internal api taking in customer account id and access token and pulls link into platform.
       requestBody:
         content:
@@ -1665,7 +1665,7 @@ paths:
                 properties: {}
       operationId: patch-integration-platform
       x-stoplight:
-        id: c8k24oei4hdd5
+        id: 44m8tawj5cwv3
       description: |-
         Internal api taking in customer account id and connection id and pulls all periphials
 
@@ -1697,7 +1697,7 @@ paths:
                 properties: {}
       operationId: post-accounting-ap-billpay
       x-stoplight:
-        id: 4kfrch3g8g4to
+        id: 6gmai2iufb5a2
       security: []
       requestBody:
         content:
@@ -1723,7 +1723,7 @@ paths:
           description: OK
       operationId: linkInvoiceToSpendPlan
       x-stoplight:
-        id: 23rhnwv3uhorq
+        id: p01b9qfh9cufr
       description: attempt to link invoice to given spend plan. Will fail if doing so would exceed the spend control limits.
   '/accounting/accounts/{accountId}/invoices/links':
     parameters:
@@ -1737,7 +1737,7 @@ paths:
           $ref: '#/components/responses/GetInvoiceSpendPlans'
       operationId: getSpendPlanLinkForInvoices
       x-stoplight:
-        id: adagr1tq0ngru
+        id: 24z2o2o5bxpyg
       requestBody:
         $ref: '#/components/requestBodies/GetInvoicesSpendPlanBody'
   '/accounting/accounts/{accountId}/spendplans/{spendPlanId}/unlink/invoices/{invoiceId}':
@@ -1758,7 +1758,7 @@ paths:
           description: OK
       operationId: unlinkInvoiceFromSpendPlan
       x-stoplight:
-        id: w9ol1hww85dzl
+        id: 9y44l8vja5axq
       description: Unlink an invoice that is attached to a spend plan
   /accounting/ap/billpay/process:
     post:
@@ -1775,7 +1775,7 @@ paths:
                 properties: {}
       operationId: postAccountingApBillpayProcess
       x-stoplight:
-        id: r2fpbwbt69ers
+        id: 0lx7yzyse1u71
       requestBody:
         content:
           application/json:
@@ -1798,7 +1798,7 @@ paths:
                 properties: {}
       operationId: post-accounting-expenses-links-process
       x-stoplight:
-        id: zgzaeprn50t5b
+        id: r1siziru973qq
       requestBody:
         content:
           application/json:
@@ -1835,7 +1835,7 @@ paths:
                       type: string
       operationId: post-accounting-accounts-accountId-events-eventId-backfill
       x-stoplight:
-        id: cstkiy4sl5msr
+        id: 8rldk1z07kiuj
       description: takes event notification id and backfills a bank feed transaction
       requestBody:
         content:
@@ -1881,7 +1881,7 @@ paths:
                       id: t580k7gjp98ko
       operationId: post-accounting-accounts-accountId-feeds-connection
       x-stoplight:
-        id: b2ruuq9yi50xf
+        id: h7whsiajytohh
       requestBody:
         content:
           application/json:
@@ -1903,7 +1903,7 @@ paths:
                 properties: {}
       operationId: post-accounting-feeds-process
       x-stoplight:
-        id: gvpb6y28485q2
+        id: ug8y8rnliidl1
       requestBody:
         content:
           application/json:
@@ -1935,7 +1935,7 @@ paths:
                 properties: {}
       operationId: post-accounting-feeds-categories-process
       x-stoplight:
-        id: mkvnay83jvmq8
+        id: o1hc2rpigkcqh
       x-internal: true
       requestBody:
         content:
@@ -1957,7 +1957,7 @@ paths:
                 properties: {}
       operationId: post-accounting-feeds-accounts-process
       x-stoplight:
-        id: aqxww3nsdeprz
+        id: 1qy89x0a4kqc4
       x-internal: true
       requestBody:
         content:
@@ -1979,7 +1979,7 @@ paths:
                 properties: {}
       operationId: post-accounting-feeds-transactions-process
       x-stoplight:
-        id: oem2yi51yw7wt
+        id: uymh6u4e560fn
       x-internal: true
       requestBody:
         content:
@@ -2010,7 +2010,7 @@ paths:
                     id: nez1ptw428fuk
       operationId: get-spend-plans-alfred
       x-stoplight:
-        id: sr4sq7v1z9xzx
+        id: rhp7hg3t3zit7
   '/accounting/businesses/{businessId}/spendplans/{spendPlanId}/admin/view':
     parameters:
       - schema:
@@ -2032,7 +2032,7 @@ paths:
           $ref: '#/components/responses/GetSpendPlansAlfred'
       operationId: get-spend-plan-alfred
       x-stoplight:
-        id: 9rumm7syjnwg9
+        id: bcm6n5euafnyb
   /accounting/flexErrorCodes:
     get:
       summary: get flex error codes
@@ -2043,7 +2043,7 @@ paths:
           $ref: '#/components/responses/GetFlexErrorCodes'
       operationId: getFlexErrorCodes
       x-stoplight:
-        id: s47f7b9y27krh
+        id: bcm6n2rtafnyb
   /accounting/feeds/connection:
     post:
       summary: Create Intuit bank feed connection
@@ -2058,7 +2058,7 @@ paths:
                 $ref: '#/components/schemas/ExpenseLink'
       operationId: post-accounting-feeds-connection
       x-stoplight:
-        id: 9p06o68cauw16
+        id: y3hlwcyi4qin5
       requestBody:
         content:
           application/json:
@@ -2146,7 +2146,7 @@ paths:
                                   id: k0zdehehq58si
       operationId: get-accounting-businesses-businessId-commerce-metrics
       x-stoplight:
-        id: 0onopp1x1vyyz
+        id: x0otb0sk2ybew
   '/accounting/businesses/{businessId}/ads/campaigns/{campaignId}/dailies':
     parameters:
       - schema:
@@ -2187,7 +2187,7 @@ paths:
                         id: 5ceyv6w16xvne
       operationId: get-accounting-businesses-businessId-ads-dailies
       x-stoplight:
-        id: mrel17maeyvi1
+        id: puwoiwrxrjjiw
       parameters: []
   '/accounting/businesses/{businessId}/ads/campaigns':
     parameters:
@@ -2224,7 +2224,7 @@ paths:
                         id: oub1wrf6zzjem
       operationId: get-accounting-businesses-businessId-ads-campaigns
       x-stoplight:
-        id: zg1nuhgt0crto
+        id: j6xjr79pm2vun
       parameters: []
   /accounting/commerce/links:
     get:
@@ -2251,7 +2251,7 @@ paths:
                         id: q7q7sb297e6gq
       operationId: get-accounting-commerce-links
       x-stoplight:
-        id: jbj40oo863nzz
+        id: p8yjl9d6hr9n4
   /accounting/ads/links:
     get:
       summary: Advertising links
@@ -2277,13 +2277,13 @@ paths:
                         id: ady5vqhuat4xi
       operationId: get-accounting-ads-links
       x-stoplight:
-        id: n3pfd968n0dzt
+        id: dw2npsxg1buef
 components:
   schemas:
     WebhookLink:
       title: WebhookLink
       x-stoplight:
-        id: rllg135se99ui
+        id: 6qxy7glgzq6hr
       type: object
       description: incoming webhook request for link
       properties:
@@ -2320,7 +2320,7 @@ components:
     WebhookVendor:
       title: WebhookVendor
       x-stoplight:
-        id: by54545c2sr6k
+        id: g7xxcfed1b3kr
       type: object
       description: incoming webhook for vendor
       properties:
@@ -2358,7 +2358,7 @@ components:
     WebhookAccount:
       title: WebhookAccount
       x-stoplight:
-        id: yr9d526fk2clw
+        id: l3nj4s95304b2
       type: object
       description: incoming webhook for account
       required:
@@ -2396,7 +2396,7 @@ components:
     ExpenseLink:
       title: ExpenseLink
       x-stoplight:
-        id: 36lijgkspxd3q
+        id: stghildfj6qur
       type: object
       description: Expense link model.
       required:
@@ -2495,7 +2495,7 @@ components:
     Accounts:
       title: Accounts
       x-stoplight:
-        id: j39iy0ohv9pfl
+        id: ie1dq79l7m0qc
       type: object
       description: Account Types
       required:
@@ -2517,7 +2517,7 @@ components:
     Expenses:
       title: Expenses
       x-stoplight:
-        id: pp7z1m0xmnvyf
+        id: xi2nwkx57glv8
       type: object
       description: Expenses.
       required:
@@ -2561,7 +2561,7 @@ components:
     Transactions:
       title: Transactions
       x-stoplight:
-        id: p7vlxsylw0977
+        id: ui6eq7x5ubgfh
       type: object
       description: Transactions
       properties:
@@ -2579,7 +2579,7 @@ components:
     SyncedExpenses:
       title: SyncedExpenses
       x-stoplight:
-        id: e5ue612p8418x
+        id: jazaaid65elwh
       type: object
       properties:
         accounts:
@@ -2600,7 +2600,7 @@ components:
     Category:
       title: Category
       x-stoplight:
-        id: 27l3lm8vkmqwc
+        id: kv1wittyiz1om
       type: object
       description: Category and/or Account depending on end user platform
       required:
@@ -2659,7 +2659,7 @@ components:
     WebhookJob:
       title: WebhookJob
       x-stoplight:
-        id: 29wt8grt0i2qm
+        id: qvbbumpz7wchp
       type: object
       description: Webhoook to process a queued job.
       required:
@@ -2696,7 +2696,7 @@ components:
     ExpenseMetrics:
       title: Metrics
       x-stoplight:
-        id: h91megm7100jp
+        id: k793i2khcrndv
       type: object
       description: Top level metrics object.
       required:
@@ -2751,7 +2751,7 @@ components:
     ExpenseMetricsLink:
       title: ExpenseMetricsLink
       x-stoplight:
-        id: mcr83gqymo5xu
+        id: b3d6wo1215kjd
       type: object
       description: Link properties
       required:
@@ -2804,7 +2804,7 @@ components:
     ExpenseMetricsCategories:
       title: ExpenseMetricsCategories
       x-stoplight:
-        id: f8i3lz5f5nprn
+        id: inueemrspu8bn
       type: object
       description: Category properties.
       required:
@@ -2837,7 +2837,7 @@ components:
     ExpenseMetricsVendors:
       title: ExpenseMetricsVendors
       x-stoplight:
-        id: dk3lewm4pg6g2
+        id: 79m58bxc6bf4s
       type: object
       required:
         - id
@@ -2864,7 +2864,7 @@ components:
     ExpenseMetricsMeta:
       title: ExpenseMetricsMeta
       x-stoplight:
-        id: 560gm30g732ih
+        id: xvgi3t95h9n0a
       type: object
       description: Misc metrics on transactions.
       required:
@@ -2896,7 +2896,7 @@ components:
     ExpenseMetricsTransactions:
       title: ExpenseMetricsTransactions
       x-stoplight:
-        id: xw29mwbu13chw
+        id: 930gxqcdholtg
       type: object
       description: Auto Sync Transaction properties.
       required:
@@ -3019,7 +3019,7 @@ components:
     Card:
       title: Card
       x-stoplight:
-        id: l3zb36eneal5t
+        id: nkn0sfy8zvidd
       type: object
       description: Mapping of card to category
       required:
@@ -3049,7 +3049,7 @@ components:
     CreateSpendPlan:
       title: CreateSpendPlan
       x-stoplight:
-        id: yvc4zgtp5a7ce
+        id: jvs9y3fjsk5f9
       type: object
       required:
         - name
@@ -3162,7 +3162,7 @@ components:
     UpdateSpendPlan:
       title: UpdateSpendPlan
       x-stoplight:
-        id: dkb048e31nust
+        id: jvs9y3fjsk5f0
       type: object
       required:
         - name
@@ -3274,7 +3274,7 @@ components:
     SpendPlanMember:
       title: SpendPlanMember
       x-stoplight:
-        id: nf4z2gmidtesv
+        id: zyyrj2eg46x9e
       type: object
       required:
         - personId
@@ -3306,7 +3306,7 @@ components:
     SpendPlanAdminView:
       title: SpendPlanAdminView
       x-stoplight:
-        id: 11fg2lj451w8x
+        id: qnxo85vxjux5y
       type: object
       required:
         - id
@@ -3483,7 +3483,7 @@ components:
     SpendPlanView:
       title: SpendPlanView
       x-stoplight:
-        id: aiixfnczvqhus
+        id: xxh9rr9bgtrf6
       type: object
       required:
         - id
@@ -3603,7 +3603,7 @@ components:
     SpendPlanUsageTransaction:
       title: SpendPlanUsageTransaction
       x-stoplight:
-        id: ed35vu3p8bdya
+        id: i1316si037w2s
       type: object
       required:
         - date
@@ -3621,7 +3621,7 @@ components:
     SpendPlanLimit:
       title: SpendPlanLimit
       x-stoplight:
-        id: 0nqsw4ehiirk6
+        id: qe1qmhyefqm8e
       type: object
       required:
         - personId
@@ -3679,7 +3679,7 @@ components:
     SpendPlanCard:
       title: SpendPlanCard
       x-stoplight:
-        id: 5iwfx22uft4dy
+        id: jhz7784a1l01m
       type: object
       required:
         - personId
@@ -3748,7 +3748,7 @@ components:
     SpendPlanTransaction:
       title: SpendPlanTransaction
       x-stoplight:
-        id: 5ssnv4rz7xck4
+        id: n5krmcxtzgoqy
       type: object
       description: Transaction data for spend plan
       properties:
@@ -3803,7 +3803,7 @@ components:
     AccountingFlexErrorCodes:
       title: AccountingFlexErrorCodes
       x-stoplight:
-        id: 1y9uc0ltfvnwl
+        id: n9oy03byx0ue7
       enum:
         - SPEND_PLANS_PLAN_NOT_EXIST
         - SPEND_PLANS_CALLER_NOT_MEMBER
@@ -3822,7 +3822,7 @@ components:
     AccountingSettings:
       title: AccountingSettings
       x-stoplight:
-        id: gxz5lfr7c3ffm
+        id: 9loy1tsewnzkv
       type: object
       description: controls various integration settings
       properties:
@@ -3890,7 +3890,7 @@ components:
     LinkNotification:
       title: LinkNotification
       x-stoplight:
-        id: yue9zads1ngc5
+        id: 2o69g7l9coy67
       type: object
       properties:
         link:
@@ -3975,7 +3975,7 @@ components:
     GeneralLedger:
       title: GeneralLedger
       x-stoplight:
-        id: tuul0n4tmvjd8
+        id: x0tzaqequ8rhk
       type: object
       required:
         - id
@@ -4027,7 +4027,7 @@ components:
     Connection:
       title: Connection
       x-stoplight:
-        id: tdpm8g2tb0m09
+        id: 25ujdrlsekmys
       type: object
       required:
         - id
@@ -4076,7 +4076,7 @@ components:
     CommerceMetric:
       title: CommerceMetric
       x-stoplight:
-        id: 8abnpp75olrtp
+        id: cmvl2iuc6ea6w
       type: object
       description: Commerce Integration Metrics
       required:
@@ -4118,7 +4118,7 @@ components:
     SpendPlansAdminDetails:
       title: SpendPlansAdminDetails
       x-stoplight:
-        id: km6vy20hohqiw
+        id: u90iiigmak6qg
       type: object
       properties:
         cards:
@@ -4148,7 +4148,7 @@ components:
     SpendPlanRequestFunds:
       title: SpendPlanRequestFunds
       x-stoplight:
-        id: rbr3rm116tqtl
+        id: 1n193akp14id5
       type: object
       required:
         - id
@@ -4199,7 +4199,7 @@ components:
     WebhookBill:
       title: WebhookBill
       x-stoplight:
-        id: kso8van4aavqc
+        id: xxhhigsdj9kbn
       type: object
       required:
         - type
@@ -4235,7 +4235,7 @@ components:
     WebhookBillPayment:
       title: WebhookBillPayment
       x-stoplight:
-        id: p2evfoc80y7ec
+        id: ctb0f8fos3aty
       type: object
       required:
         - type
@@ -4271,7 +4271,7 @@ components:
     InvoiceList:
       title: InvoiceList
       x-stoplight:
-        id: 42jqiholkgnqr
+        id: m2i4onftw290b
       type: object
       required:
         - invoiceIds
@@ -4288,7 +4288,7 @@ components:
     InvoiceSpendPlan:
       title: InvoiceSpendPlan
       x-stoplight:
-        id: ploqgoojpx0o9
+        id: pktldv0xfg02d
       type: object
       required:
         - invoiceId
@@ -4309,7 +4309,7 @@ components:
     Metric:
       title: Metric
       x-stoplight:
-        id: oa25amppfd6av
+        id: ibzcknbpgrmf3
       type: object
       required:
         - startDate
@@ -4331,7 +4331,7 @@ components:
     Daily:
       title: Daily
       x-stoplight:
-        id: r4el70ymguu2h
+        id: ywdpv0866tx6b
       type: object
       description: Campaign Daily Model
       required:
@@ -4368,7 +4368,7 @@ components:
     Campaign:
       title: Campaign
       x-stoplight:
-        id: 4riqgp38hlpps
+        id: 0mh3s9oglagvc
       type: object
       required:
         - id
@@ -4404,7 +4404,7 @@ components:
     CommerceLink:
       title: CommerceLink
       x-stoplight:
-        id: ix4i4dx4cizhs
+        id: 7t1kb79vh11be
       type: object
       required:
         - id
@@ -4435,7 +4435,7 @@ components:
     AdsLink:
       title: AdsLink
       x-stoplight:
-        id: 5mauoe21hqtm4
+        id: rp2dusk17nary
       type: object
       required:
         - id

@@ -5,30 +5,18 @@ allOf:
         type: string
         format: uuid
         readOnly: true
-        x-stoplight:
-          id: 44p976pm9hbnk
       businessId:
         type: string
         format: uuid
         readOnly: true
-        x-stoplight:
-          id: 3c87mkhjgerp4
       percentage:
         type: number
         maximum: 100
         minimum: 0
-        x-stoplight:
-          id: fwnbxhhonb822
     required:
       - personId
       - businessId
       - percentage
-    x-stoplight:
-      id: tdu5vyx676f8v
   - $ref: ./CoreModel.yaml
-    x-stoplight:
-      id: gvuygpt33eofs
-x-stoplight:
-  id: tkcvkogw35zxl
 description: Represents a business owner
 title: ''

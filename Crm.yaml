@@ -1,6 +1,6 @@
 openapi: 3.1.0
 x-stoplight:
-  id: fejhftcdl9fqr
+  id: 98stww1vkkpbn
 info:
   title: Crm
   version: '1.0'
@@ -47,7 +47,7 @@ paths:
                       id: nqntq15p88kl1
       description: ''
       x-stoplight:
-        id: 4y4ajq3n85aai
+        id: p0ungzun7ke2l
   '/crm/hubspot/companies/businesses/{businessId}/sync':
     parameters:
       - $ref: '#/components/parameters/businessId'
@@ -74,7 +74,7 @@ paths:
                       id: nqntq15p88kl1
       description: ''
       x-stoplight:
-        id: 8f9qovrvi871x
+        id: 1rzytxaa915sz
   '/crm/hubspot/underwriting/businesses/{businessId}/sync':
     parameters:
       - $ref: '#/components/parameters/businessId'
@@ -101,7 +101,7 @@ paths:
                       id: nqntq15p88kl1
       description: ''
       x-stoplight:
-        id: gyntr4pttxppj
+        id: 0gqif7xi3ypao
   '/crm/hubspot/deals/businesses/{businessId}/sync':
     parameters:
       - $ref: '#/components/parameters/businessId'
@@ -128,7 +128,7 @@ paths:
                       id: nqntq15p88kl1
       description: ''
       x-stoplight:
-        id: hcmx2v77oesa3
+        id: qoorhm5b1ebbh
   '/crm/hubspot/onboarding/businesses/{businessId}/sync':
     parameters:
       - $ref: '#/components/parameters/businessId'
@@ -155,7 +155,7 @@ paths:
                       id: nqntq15p88kl1
       description: ''
       x-stoplight:
-        id: pnrq92k1rf9v4
+        id: cfsw53owquxnw
   '/crm/hubspot/account-management/businesses/{businessId}/sync':
     parameters:
       - $ref: '#/components/parameters/businessId'
@@ -182,7 +182,7 @@ paths:
                       id: nqntq15p88kl1
       description: ''
       x-stoplight:
-        id: 950kygn4rfe7g
+        id: 9g4ehkbsrf64f
   '/crm/hubspot/monthly-spend/businesses/{businessId}/sync':
     parameters:
       - $ref: '#/components/parameters/businessId'
@@ -212,7 +212,7 @@ paths:
                       id: kaldq15p11kp2
       description: ''
       x-stoplight:
-        id: zq4vywqh1y58q
+        id: vidg0xwjo31d2
   /crm/hubspot/contacts/syncAll:
     parameters: []
     get:
@@ -242,7 +242,7 @@ paths:
                         id: rfzyfdmtvtwnr
       description: ''
       x-stoplight:
-        id: mt9w5z01kj92u
+        id: 7onszbx295oyt
   /crm/hubspot/companies/syncAll:
     parameters: []
     get:
@@ -272,7 +272,7 @@ paths:
                         id: rfzyfdmtvtwnr
       description: ''
       x-stoplight:
-        id: hmonvkeeffdx1
+        id: 186cqblnwdl9f
   /crm/hubspot/underwriting/syncAll:
     parameters: []
     get:
@@ -302,7 +302,7 @@ paths:
                         id: rfzyfdmtvtwnr
       description: ''
       x-stoplight:
-        id: tie77rms3nntb
+        id: zb64ynal6d24e
   /crm/hubspot/deals/syncAll:
     parameters: []
     get:
@@ -332,7 +332,7 @@ paths:
                         id: rfzyfdmtvtwnr
       description: ''
       x-stoplight:
-        id: z9dh0iuc1kl6g
+        id: clcj24plo3qjc
   /crm/hubspot/onboarding/syncAll:
     parameters: []
     get:
@@ -362,7 +362,7 @@ paths:
                         id: rfzyfdmtvtwnr
       description: ''
       x-stoplight:
-        id: 7rleearmgh4dy
+        id: jl8qcz5dbccm4
   /crm/hubspot/account-management/syncAll:
     parameters: []
     get:
@@ -392,7 +392,7 @@ paths:
                         id: rfzyfdmtvtwnr
       description: ''
       x-stoplight:
-        id: zaswn186fpmea
+        id: cahgzwjk7exef
   /crm/hubspot/monthly-spend/syncAll:
     parameters: []
     get:
@@ -425,7 +425,7 @@ paths:
                         id: pflqrnf9j1rt5
       description: ''
       x-stoplight:
-        id: 31v55k3nuq5v6
+        id: 1ox1fujv5a61z
 components:
   schemas: {}
   securitySchemes:

@@ -1,80 +1,80 @@
 title: HubspotAccountManagement
 x-stoplight:
-  id: ru22uuchot8wg
+  id: qsmm97d46buuh
 type: object
 description: Fields to be written from Flex to the Hubspot Account Management Entity
 properties:
   id:
     type: string
     x-stoplight:
-      id: vlqlygi1xp35i
+      id: g3l0v531jviat
   flexCompanyId:
     type: string
     x-stoplight:
-      id: 8dgbiy2ywmwlz
+      id: rmik5dwr629h7
     format: uuid
   availableCredit:
     type: number
     x-stoplight:
-      id: i65spayvwjrv7
+      id: bjhr5e2ckxgts
   creditLimit:
     type: number
     x-stoplight:
-      id: a32sqaeqjzzhb
+      id: p455yxs7ey44c
   lithicId:
     type: string
     x-stoplight:
-      id: uad384a34zti9
+      id: lpcng7a6g48ih
     format: uuid
   unitId:
     type: string
     x-stoplight:
-      id: vuvm0c4mc53jq
+      id: ja669tym1z66k
     format: uuid
   bankDeposits:
     type: number
     x-stoplight:
-      id: le4o5oj65ai3w
+      id: dp337ibdnv8iu
   creditCashbackRebateBalance:
     type: number
     x-stoplight:
-      id: 0k6g03jg3leby
+      id: c4bb2iy1mv5ar
   creditCashbackNearTermDays:
     type: number
     x-stoplight:
-      id: 6cqr4l5uaqfg8
+      id: od6lg1zu2x7t1
   creditCashbackFarTermDays:
     type: number
     x-stoplight:
-      id: b929rlaou2gc4
+      id: qpynewtfskys0
   creditCashbackNearTermPct:
     type: number
     x-stoplight:
-      id: gnfc3qg5oqioc
+      id: x7mi0d6gyr0oq
   creditCashbackFarTermPct:
     type: number
     x-stoplight:
-      id: b1m140lrobtxk
+      id: tqdhjrylsder1
   customerStartDate:
     type: string
     x-stoplight:
-      id: 772loe04bx1z3
+      id: obwf72wsyna7l
     format: date
   creditLineApproved:
     type: string
     x-stoplight:
-      id: er45yt0tstmyc
+      id: hjjb8fl2c7gh0
     format: date-time
   monthlySpend:
     type: number
     x-stoplight:
-      id: ubzd3rze8qjpr
+      id: nbhh45ewk8kur
   firstTransactionDate:
     type: string
     x-stoplight:
-      id: 186ep2xl67s4x
+      id: o7rr8vppyc97b
     format: date-time
   creditUtilization:
     type: number
     x-stoplight:
-      id: jod795ua300p7
+      id: kvq1b580nh7d8

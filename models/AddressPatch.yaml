@@ -4,22 +4,10 @@ anyOf:
       type:
         type: string
         format: uuid
-        x-stoplight:
-          id: 7nf2btpicj72g
       isPrimary:
         type: boolean
-        x-stoplight:
-          id: pjnt9u53iczeh
       active:
         type: boolean
-        x-stoplight:
-          id: 5tsyc3j4vfz4a
-    x-stoplight:
-      id: dsb1ynoxcxzop
   - $ref: ./BasicAddress.yaml
-    x-stoplight:
-      id: wjurnfmts6f7q
-x-stoplight:
-  id: wrs3cbinjct07
 description: Properties that are allowed to be edited on existing addresses
 title: ''

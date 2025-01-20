@@ -6,14 +6,10 @@ allOf:
         format: uuid
         description: Email identifier
         readOnly: true
-        x-stoplight:
-          id: s89b53e688thn
       value:
         type: string
         description: Email address
         format: email
-        x-stoplight:
-          id: m4keaharoumst
       type:
         type: string
         description: A label indicating the email's type
@@ -21,41 +17,25 @@ allOf:
           - work
           - home
           - other
-        x-stoplight:
-          id: s7y5oq7ngryfb
       isPrimary:
         type: boolean
         description: Indicates if this is the preferred email or primary email
         default: true
-        x-stoplight:
-          id: fi0q07ehknk06
       verificationDate:
         type: string
         format: date-time
         description: The date this email was verified
         readOnly: true
-        x-stoplight:
-          id: 99yvg1qasczts
       verificationMethod:
         type: string
         description: The method used to verify this email
         readOnly: true
-        x-stoplight:
-          id: 5vxv4g7vxa3r9
       active:
         type: boolean
         description: A value indicating if the email is enabled in the system
-        x-stoplight:
-          id: 3h2dq83h1m1bu
     required:
       - id
       - value
-    x-stoplight:
-      id: ooe612krieh54
   - $ref: ./CoreModel.yaml
-    x-stoplight:
-      id: c8cbdgj3a8b57
-x-stoplight:
-  id: ivdlr7o272uyj
 title: Email
 description: Represents an email

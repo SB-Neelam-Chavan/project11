@@ -1,125 +1,125 @@
 description: Represents a Mercoa Invoice
-x-stoplight:
-  id: nxu6bme1ms765
 title: MercoaInvoice
+x-stoplight:
+  id: fr9dqmcht2pwk
 type: object
 properties:
   id:
     type: string
     x-stoplight:
-      id: ckzkpx8zu0hhy
+      id: sc5sd1tou0qcf
   amount:
     type: number
     x-stoplight:
-      id: vwd9a5sk4xtby
+      id: 4mx2rruk0qznq
   approvalPolicy:
     type: string
     x-stoplight:
-      id: pugpgsj65f9wd
+      id: qa3hwuuxp02c4
   approvers:
     type: string
     x-stoplight:
-      id: f62hnvd6c3yix
+      id: tle4xs0ltmnnn
   asOf:
     type: string
     x-stoplight:
-      id: cgcn0te7cynjm
+      id: v50uyk8e2bhq7
   bankingPaymentsId:
     type: string
     x-stoplight:
-      id: 2o0o2mrqjzvac
+      id: 77rh8th6x1ur3
   byUser:
     type: string
     x-stoplight:
-      id: b29nbg38p5vzd
+      id: cmqxeh6z7thh0
   companyId:
     type: string
     x-stoplight:
-      id: w3r74z0ky8xvs
+      id: yo9xrdoek9471
   createdAt:
     type: string
     x-stoplight:
-      id: r934cymyfzl8q
+      id: dx70biduk73p7
   createdBy:
     type: string
     x-stoplight:
-      id: taj6vuo059czj
+      id: 37nxopqcp9uyw
   currency:
     type: string
     x-stoplight:
-      id: cgni2xw2wr3vx
+      id: 91bu2y8lal2kc
   deductionDate:
     type: string
     x-stoplight:
-      id: ug4gmcs2nki7d
+      id: 6dpkbpzh0dpcw
   dueDate:
     type: string
     x-stoplight:
-      id: 79nlov6ft0pja
+      id: 4p26hi44jexhl
   failureType:
     type: string
     x-stoplight:
-      id: 6kjwzagmq5tmp
+      id: bplr2mwtnenlr
   fees:
     type: string
     x-stoplight:
-      id: 0xyq6c57ozvne
+      id: rgdtv8lj9aziu
   foreignId:
     type: string
     x-stoplight:
-      id: 4ebyilgaharw8
+      id: f7sbiuvp5k1dt
   hasDocuments:
     type: boolean
     x-stoplight:
-      id: lyf641o6878jy
+      id: jofz2j471n2yy
   hasSourceEmail:
     type: boolean
     x-stoplight:
-      id: 774v8oegfeoaf
+      id: zt0r4brc5x7lo
   invoiceDate:
     type: string
     x-stoplight:
-      id: kgc3tsvzmnm00
+      id: 3zyz1td76jq1t
   invoiceNumber:
     type: string
     x-stoplight:
-      id: v6a0zb00jt91a
+      id: h8jbskhyx1hvv
   lineItems:
     type: string
     x-stoplight:
-      id: h46glp08mhteg
+      id: ap453hy0ztlx9
   merInvoiceId:
     type: string
     x-stoplight:
-      id: g3qfkla1v7y16
+      id: ekudzkqjkuhbj
   merUserCreated:
     type: string
     x-stoplight:
-      id: q138w2dnsq1yw
+      id: mgx34p1e2je2q
   metadata:
     type: string
     x-stoplight:
-      id: 306rlb8q5vacd
+      id: 7pdspdane7lj8
   payerId:
     type: string
     x-stoplight:
-      id: 5u6cyx096p9ur
+      id: 7qh6esbzdd32k
   paymentDestinationId:
     type: string
     x-stoplight:
-      id: ul7757hw7nneo
+      id: d9n53op0uiugr
   settlementDate:
     type: string
     x-stoplight:
-      id: rke9xawcadn45
+      id: nss4xfw387kvb
   status:
     type: string
     x-stoplight:
-      id: bsj3i2i2m9oqm
+      id: q9k87kshelumd
   vendorId:
     type: string
     x-stoplight:
-      id: 07iu3vo62qkzs
+      id: 0vqm5btyzg5dj
 required:
   - id
   - amount

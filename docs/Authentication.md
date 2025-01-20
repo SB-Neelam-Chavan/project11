@@ -1,5 +1,5 @@
 ---
-stoplight-id: idtut6dab2xnb
+stoplight-id: w63qk5bji2iqw
 tags: [Authentication]
 ---
 

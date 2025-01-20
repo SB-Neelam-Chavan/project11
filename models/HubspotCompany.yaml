@@ -1,100 +1,100 @@
 title: HubspotCompany
 x-stoplight:
-  id: mr4ie0o7buzmu
+  id: kw05tc73pd1dd
 type: object
 description: Fields to be written from Flex to the Hubspot Company Entity
 properties:
   id:
     type: string
     x-stoplight:
-      id: 8gvq78v0i0wvt
+      id: tdao189g1b3n0
   flexCompanyId:
     type: string
     x-stoplight:
-      id: astj7bchi2djo
+      id: n9pxrxtskax32
     format: uuid
   availableCredit:
     type: number
     x-stoplight:
-      id: 9v315avo2qt4j
+      id: xe3bggtjrtbr3
   creditBalance:
     type: number
     x-stoplight:
-      id: gp2xocqghztwf
+      id: 34ousit9enh23
   creditLimit:
     type: number
     x-stoplight:
-      id: ubef3zr7ee9z2
+      id: 647z1855ltiik
   lithicId:
     type: string
     x-stoplight:
-      id: hw78iehiii2fc
+      id: 453c31nmhanht
     format: uuid
   unitId:
     type: string
     x-stoplight:
-      id: b3hjif4158yjx
+      id: 6ckukywuxg97m
     format: uuid
   bankDeposits:
     type: number
     x-stoplight:
-      id: e79893k5nfe3e
+      id: ca87fkxymenls
   creditCashbackRebateBalance:
     type: number
     x-stoplight:
-      id: 9rxzz0n9cmyh3
+      id: r6fyww42xyeu1
   creditCashbackNearTermDays:
     type: number
     x-stoplight:
-      id: a9fjjingh7hxg
+      id: 978llllxj6v05
   creditCashbackFarTermDays:
     type: number
     x-stoplight:
-      id: erdue87p23jh7
+      id: 5fllik6ucug7g
   creditCashbackNearTermPct:
     type: number
     x-stoplight:
-      id: bo6ote17vnc12
+      id: e2sn9ixpyfh8h
   creditCashbackFarTermPct:
     type: number
     x-stoplight:
-      id: 8c5miysmxtt2w
+      id: jfcxiqzdfvju7
   customerStartDate:
     type: string
     x-stoplight:
-      id: 3u0bue0ola07r
+      id: 0222j3s6k74r4
     format: date
   creditLineApproved:
     type: string
     x-stoplight:
-      id: j5n6gajv110w2
+      id: 2jgacpxas7cbd
     format: date-time
   monthlySpend:
     type: number
     x-stoplight:
-      id: cniqece6lhcmk
+      id: 2pwr58g965ccn
   firstTransactionDate:
     type: string
     x-stoplight:
-      id: hwou4ud0e4suq
+      id: 6jvd8shbnl44e
     format: date-time
   creditUtilization:
     type: number
     x-stoplight:
-      id: yy0fxyd83j8jm
+      id: lpi9gwbo7pc49
   annualRevenue:
     type: string
     x-stoplight:
-      id: 7wh9wzylge99t
+      id: 9f6mcwoeghn37
   alfredUrl:
     type: string
     x-stoplight:
-      id: c2598v7cfamnn
+      id: zes3t56ll616k
   foundedYear:
     type: string
     x-stoplight:
-      id: j4r30b681anw9
+      id: ysrtf4j9n3o5o
   dbaName:
     type: string
     x-stoplight:
-      id: cssr6uaa5jj9q
+      id: zw89rvcwgscud

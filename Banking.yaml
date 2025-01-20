@@ -1,6 +1,6 @@
 openapi: 3.1.0
 x-stoplight:
-  id: edfaz5qy8dmad
+  id: 1f36flvcbbcdz
 info:
   title: Banking
   version: '1.0'
@@ -69,8 +69,6 @@ paths:
                       x-stoplight:
                         id: rfzyfdmtvtwnr
       description: Retrieve a list of accounts
-      x-stoplight:
-        id: 66jfmrlb3d8i0
   /banking/balances:
     get:
       summary: List all banking account balances (for internal use only)
@@ -120,8 +118,6 @@ paths:
                         hold:
                           type: number
       description: Retrieve a list of all banking account balances
-      x-stoplight:
-        id: iuf1xfh8c7ogw
 components:
   schemas: {}
   securitySchemes:

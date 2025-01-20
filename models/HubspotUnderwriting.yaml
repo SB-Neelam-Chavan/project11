@@ -1,17 +1,17 @@
 title: HubspotUnderwriting
 x-stoplight:
-  id: hl328t2o26ypk
+  id: 24h2urmz75li3
 type: object
 description: Fields to be written from Flex to the Hubspot Underwriting Entity
 properties:
   id:
     type: string
     x-stoplight:
-      id: zrgkyq0glkhuw
+      id: xssa17nw1vt4b
   bankingApplicationStatus:
     type: string
     x-stoplight:
-      id: etndbl739bjs5
+      id: xp78v81fhxouz
     enum:
       - unused
       - incomplete
@@ -21,7 +21,7 @@ properties:
   creditApplicationStatus:
     type: string
     x-stoplight:
-      id: jy59sv57u4ct6
+      id: 32iw1bwm7fou8
     enum:
       - unused
       - incomplete
@@ -31,7 +31,7 @@ properties:
   userType:
     type: string
     x-stoplight:
-      id: 7jljifui9ok98
+      id: rjip64t5pmnu0
     enum:
       - employee
       - owner
@@ -41,31 +41,31 @@ properties:
   flexUserId:
     type: string
     x-stoplight:
-      id: w763i41eyysm0
+      id: pdmjn1x527sdz
     format: uuid
   flexCompanyId:
     type: string
     x-stoplight:
-      id: pf20zb1ymjall
+      id: q0rd5czjeuup4
     format: uuid
   bankingApplicant:
     type: string
     x-stoplight:
-      id: sjrx2aeuhztf7
+      id: gexkjhgg8e1ub
     enum:
       - 'yes'
       - 'no'
   creditApplicant:
     type: string
     x-stoplight:
-      id: k8qfiq3b2o8rf
+      id: 5wxajdnj4cpci
     enum:
       - 'yes'
       - 'no'
   ficoBand:
     type: string
     x-stoplight:
-      id: pevcnpulxlb5r
+      id: w2dfsdqr0e0e2
     enum:
       - NOT_PROCESSED_YET
       - super_prime
@@ -75,35 +75,35 @@ properties:
   ficoStatus:
     type: string
     x-stoplight:
-      id: w3lqqzwsevsjw
+      id: elo268km4mlc6
     enum:
       - frozen
       - unfrozen
   kycPassed:
     type: boolean
     x-stoplight:
-      id: xba2792i8ayhm
+      id: curedeotcdby1
   kycPassedDate:
     type: string
     x-stoplight:
-      id: 2zew2l52kwe1l
+      id: eki3zc64nl0cr
     format: date-time
   creditLimit:
     type: number
     x-stoplight:
-      id: niyylht6dh20w
+      id: bkshdqohxzws3
   lithicId:
     type: string
     x-stoplight:
-      id: qppku6kfxradd
+      id: iegulm66n7w75
     format: uuid
   unitId:
     type: string
     x-stoplight:
-      id: af8sqdx8u7931
+      id: pd06lacr58mey
     format: uuid
   creditLineApproved:
     type: string
     x-stoplight:
-      id: qoqqd9cps0qew
+      id: njnqf5htlc84w
     format: date-time

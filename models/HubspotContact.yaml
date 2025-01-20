@@ -1,16 +1,16 @@
 title: HubspotContact
 x-stoplight:
-  id: iyiyunsvokito
+  id: yigm72f6g9h1s
 type: object
 properties:
   id:
     type: string
     x-stoplight:
-      id: qn01fboanxflp
+      id: qfoqi7dczsjl3
   bankingApplicationStatus:
     type: string
     x-stoplight:
-      id: qbsmsue1efmcd
+      id: sfpuuxgbi80n8
     enum:
       - unused
       - incomplete
@@ -20,7 +20,7 @@ properties:
   creditApplicationStatus:
     type: string
     x-stoplight:
-      id: 2xuw3b2erbrir
+      id: pqiswmkg2f4af
     enum:
       - unused
       - incomplete
@@ -30,7 +30,7 @@ properties:
   userType:
     type: string
     x-stoplight:
-      id: 9sx34p2zfht5x
+      id: dei2g5vgfq3i4
     enum:
       - employee
       - owner
@@ -40,56 +40,56 @@ properties:
   lastLogin:
     type: string
     x-stoplight:
-      id: tlxeirk3knv4m
+      id: g5nta8qnkwhea
     format: date-time
   flexUserId:
     type: string
     x-stoplight:
-      id: fnyd0so1zzc17
+      id: cwvoynviam5u4
     format: uuid
   flexCompanyId:
     type: string
     x-stoplight:
-      id: 2s6htwoqp5noi
+      id: exvpnku1tgdjy
     format: uuid
   firstName:
     type: string
     x-stoplight:
-      id: 6476i4v0qbi4g
+      id: a5typqabn8lkm
   lastName:
     type: string
     x-stoplight:
-      id: 2plzaoeq49uzu
+      id: v4ddovbij2zda
   email:
     type: string
     x-stoplight:
-      id: wrbvj81z9p4ns
+      id: h6plqovffr6po
   status:
     type: string
     x-stoplight:
-      id: w4je79hno3ita
+      id: j1intkkfj3mjt
   bankingApplicant:
     type: string
     x-stoplight:
-      id: cqmktp7md5q2k
+      id: 7gvil1u1ez90x
     enum:
       - 'yes'
       - 'no'
   creditApplicant:
     type: string
     x-stoplight:
-      id: 6f59wrlravl7f
+      id: h6bwz86bc2b2l
     enum:
       - 'yes'
       - 'no'
   authorizedSignatory:
     type: boolean
     x-stoplight:
-      id: zlcryekocdgln
+      id: t5h1fsls0ibqc
   ficoBand:
     type: string
     x-stoplight:
-      id: 237cx0ddv1ulr
+      id: ygw804oq5oneo
     enum:
       - NOT_PROCESSED_YET
       - super_prime
@@ -99,17 +99,17 @@ properties:
   ficoStatus:
     type: string
     x-stoplight:
-      id: i1r99zjiwh3t8
+      id: 6mdibbvqnex5c
     enum:
       - frozen
       - unfrozen
   kycPassed:
     type: boolean
     x-stoplight:
-      id: n8rwtjgx0izm3
+      id: 1v5bypwij8te8
   kycPassedDate:
     type: string
     x-stoplight:
-      id: 5bt9lr9ok9gg2
+      id: vnu3jsud2g00p
     format: date-time
 description: Fields to be written from Flex to the Hubspot Contact Entity

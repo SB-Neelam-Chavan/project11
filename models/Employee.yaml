@@ -1,13 +1,13 @@
 title: Employee
 x-stoplight:
-  id: sl6joby77929u
+  id: emety4f6oltlk
 type: object
 description: Represents an employee of a business
 properties:
   personId:
     type: string
     x-stoplight:
-      id: f58pmpngh4xn9
+      id: 8npx6va3d9vau
     format: uuid
     description: The person identifier
     readOnly: true
@@ -15,66 +15,66 @@ properties:
     type: string
     format: uuid
     x-stoplight:
-      id: kq12eky1pwew0
+      id: m7o8qcd1q7jc5
     description: The business identifier
     readOnly: true
   active:
     type: boolean
     description: A value indicating if the employee is enabled in the system
     x-stoplight:
-      id: bd597h8jmcbwd
+      id: l6kn93r4wcllu
     default: true
   title:
     type: string
     description: 'The employee''s title, such as `Vice President`'
     x-stoplight:
-      id: g1dk4molzsmbf
+      id: ilxznhzpzee8g
   userType:
     type: string
     description: 'Used to identify the relationship between the organization and the employee. Typical values used might be `Contractor`, `Employee`, `Intern`, `Temp`, `External`, or `Unknown`, but any value may be used.'
     x-stoplight:
-      id: l2g47vmyrpedv
+      id: tr1j46d00ki1r
   employeeNumber:
     type: string
     description: 'Numeric or alphanumeric identifier assigned to the employee, typically based on order of hire or association with an organization'
     x-stoplight:
-      id: lslavr39pe0t5
+      id: waq7e58kulvx4
   costCenter:
     type: string
     description: Identifies the name of a cost center assigned to the employee
     x-stoplight:
-      id: z7v5mtjwn1jp8
+      id: igmi2jp54xo5y
   organization:
     type: string
     description: Identifies the name of an organization assigned to the employee
     x-stoplight:
-      id: pvm8eagumf0yi
+      id: ft0kmma76q5y9
   division:
     type: string
     description: Identifies the name of a division assigned to the employee
     x-stoplight:
-      id: tye1b1iwwvtdh
+      id: dzduksfvfty4x
   department:
     type: string
     description: Identifies the name of a department assigned to the employee
     x-stoplight:
-      id: tdkqrla8g6csx
+      id: 6xoz31rdau02f
   managerId:
     type: string
     format: uuid
     description: The employee's manager's identifier
     x-stoplight:
-      id: 1jg2k4w0tjsk1
+      id: 4j31k81u7kn0t
   hireDate:
     type: string
     x-stoplight:
-      id: laugx81qh20vx
+      id: b0lniae6frrrm
     format: date
     description: The employee's hire date
   terminationDate:
     type: string
     x-stoplight:
-      id: oadfndxp1l0ek
+      id: 7ttwfs4qj6lv7
     format: date
     description: The employee's separation date
 required:

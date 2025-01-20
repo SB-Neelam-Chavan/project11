@@ -1,6 +1,6 @@
 openapi: 3.1.0
 x-stoplight:
-  id: cnkdlfvq6gcm4
+  id: 7r8ozbmmmsrye
 info:
   title: Alfred
   version: '1.0'
@@ -35,8 +35,6 @@ paths:
         - $ref: '#/components/parameters/dateAggregation'
       tags:
         - Analytics
-      x-stoplight:
-        id: jsjgrz3uj13bn
     parameters: []
   '/alfred/analytics/company/{companyId}/transactions/pending':
     get:
@@ -74,8 +72,6 @@ paths:
       parameters: []
       tags:
         - Analytics
-      x-stoplight:
-        id: wzhq0kce9ooc0
     parameters:
       - schema:
           type: string
@@ -124,8 +120,6 @@ paths:
       parameters: []
       tags:
         - Analytics
-      x-stoplight:
-        id: qw2w5sp703qdw
     parameters: []
   /alfred/analytics/banking:
     post:
@@ -293,8 +287,6 @@ paths:
                     - Canceled
                     - Pending
                     - AwaitingDocuments
-      x-stoplight:
-        id: myi0pjartt4ej
     parameters: []
   /alfred/analytics/support:
     get:
@@ -311,8 +303,6 @@ paths:
       description: Retrieves a set of metrics for support based on user filtering and constraints
       tags:
         - Analytics
-      x-stoplight:
-        id: ugpvipe6zxxvo
     parameters: []
   /alfred/analytics/lithic/settlement/details:
     get:
@@ -388,7 +378,7 @@ paths:
       tags:
         - Analytics
       x-stoplight:
-        id: 9gc3gj2s3y65m
+        id: 2vit01b00gdhj
     parameters: []
   /alfred/analytics/servicing/statements:
     get:
@@ -417,7 +407,7 @@ paths:
       tags:
         - Analytics
       x-stoplight:
-        id: bhfvsusibpboc
+        id: altuepm2t423m
     parameters: []
   /alfred/analytics/usage/crs:
     get:
@@ -433,8 +423,6 @@ paths:
         - $ref: '#/components/parameters/startDate'
         - $ref: '#/components/parameters/endDate'
         - $ref: '#/components/parameters/dateAggregation'
-      x-stoplight:
-        id: hwbdpyckg9300
   /alfred/analytics/usage/persona:
     get:
       summary: List Persona API Usage
@@ -449,8 +437,6 @@ paths:
         - $ref: '#/components/parameters/startDate'
         - $ref: '#/components/parameters/endDate'
         - $ref: '#/components/parameters/dateAggregation'
-      x-stoplight:
-        id: x97u55nc3i0sq
   /alfred/analytics/usage/gcp:
     get:
       summary: GCP Usage
@@ -465,8 +451,6 @@ paths:
         - $ref: '#/components/parameters/endDate'
         - $ref: '#/components/parameters/dateAggregation'
       description: 'Retrieve a list of Google Cloud Usage, organized by service and project'
-      x-stoplight:
-        id: kb2y5e7u8cfen
   /alfred/accounts/search:
     post:
       summary: Account search
@@ -503,8 +487,6 @@ paths:
           in: query
           name: sortBy
           description: The criteria the results are sorted by
-      x-stoplight:
-        id: tn98vs0tlzxqh
     parameters: []
   /alfred/analytics/onboarding/cards:
     get:
@@ -522,8 +504,6 @@ paths:
         - $ref: '#/components/parameters/pageSize'
         - $ref: '#/components/parameters/sort'
       description: Pull Lists of Card Ids
-      x-stoplight:
-        id: pbaeaa49uluzu
   /alfred/analytics/marketing/emails:
     get:
       summary: List Emails
@@ -548,8 +528,6 @@ paths:
           in: query
           name: event
           description: Type of trackable email event
-      x-stoplight:
-        id: 3np9wwhu0p55g
     parameters: []
   /alfred/analytics/credit/originations:
     get:
@@ -561,7 +539,7 @@ paths:
           $ref: '#/components/responses/AnalyticsMetric'
       operationId: get-credit-originations-metrics
       x-stoplight:
-        id: yctgjtl965klj
+        id: vpm5lm4yqb11p
       description: Endpoint to pull summary statistics across originations periods
       parameters:
         - $ref: '#/components/parameters/startDate'
@@ -593,7 +571,7 @@ paths:
           description: Define which pre-defined metric(s) to return
           required: true
       x-stoplight:
-        id: 7wzu93dn3qxjh
+        id: 1tq0w8tnudhuf
     parameters: []
   '/alfred/analytics/credit/statement/tape/{businessId}':
     parameters:
@@ -607,7 +585,7 @@ paths:
           $ref: '#/components/responses/CreditStatementTape'
       operationId: generateCreditStatementLoanTapeRecord
       x-stoplight:
-        id: neaew8ulwsczm
+        id: 231peuifqra92
       description: Statement focused credit loan tape by businessId
       parameters:
         - $ref: '#/components/parameters/startDate'
@@ -622,7 +600,7 @@ paths:
           $ref: '#/components/responses/PortfolioCreditStatementTape'
       operationId: generatePortfolioCreditStatementLoanTape
       x-stoplight:
-        id: xz5bqaw6xzp01
+        id: 123peqtuuwv11
       description: Credit loan tape for the entire portfolio
       parameters:
         - $ref: '#/components/parameters/startDate'
@@ -642,7 +620,7 @@ paths:
         - $ref: '#/components/parameters/endDate'
         - $ref: '#/components/parameters/dateAggregation'
       x-stoplight:
-        id: sihdoy3tf7qpg
+        id: hvsvy8c7n5asb
     parameters:
       - schema:
           type: string
@@ -665,7 +643,7 @@ paths:
         - $ref: '#/components/parameters/endDate'
         - $ref: '#/components/parameters/dateAggregation'
       x-stoplight:
-        id: 3yy3s5yhwbq9f
+        id: vfgb3z9famz65
     parameters: []
   /alfred/analytics/credit/activity/cohorts:
     get:
@@ -682,7 +660,7 @@ paths:
         - $ref: '#/components/parameters/endDate'
         - $ref: '#/components/parameters/dateAggregation'
       x-stoplight:
-        id: 2mldnegnfir30
+        id: vcikqunlzudl4
     parameters: []
   /alfred/analytics/credit/rpac:
     get:
@@ -699,7 +677,7 @@ paths:
         - $ref: '#/components/parameters/endDate'
         - $ref: '#/components/parameters/dateAggregation'
       x-stoplight:
-        id: ny2latkmirt8i
+        id: om38hqwt7p5r5
     parameters: []
   /alfred/analytics/credit/transactions/book:
     get:
@@ -732,7 +710,7 @@ paths:
         - $ref: '#/components/parameters/startDate'
         - $ref: '#/components/parameters/endDate'
       x-stoplight:
-        id: k0lsozuqskd8u
+        id: vhteqgyw3po4n
   /alfred/analytics/credit/transactions/gtv:
     get:
       summary: List Credit Transaction GTV
@@ -765,10 +743,12 @@ paths:
         - $ref: '#/components/parameters/endDate'
         - $ref: '#/components/parameters/dateAggregation'
       x-stoplight:
-        id: 6qopnl7x15w27
+        id: gqqeegyw3vdus
   /alfred/analytics/credit/transactions/gtv/rollingAverage:
     get:
       summary: List Rolling Averages for Credit Transactions - GTV
+      x-stoplight:
+        id: x7mz865hjrcxc
       tags:
         - Analytics
       responses:
@@ -804,8 +784,6 @@ paths:
         - $ref: '#/components/parameters/startDate'
         - $ref: '#/components/parameters/endDate'
         - $ref: '#/components/parameters/dateAggregation'
-      x-stoplight:
-        id: zw22fnt6f3eeu
   /alfred/analytics/credit/transactions/gtv/retention:
     get:
       summary: List Credit Transaction GTV Monthly Retention
@@ -844,7 +822,7 @@ paths:
         - $ref: '#/components/parameters/startDate'
         - $ref: '#/components/parameters/endDate'
       x-stoplight:
-        id: 3wm6nai9d21zp
+        id: 0pv7aju2bjmi
   /alfred/analytics/credit/transactions/interest:
     get:
       summary: List Credit Interest Transaction
@@ -871,7 +849,7 @@ paths:
         - $ref: '#/components/parameters/endDate'
         - $ref: '#/components/parameters/dateAggregation'
       x-stoplight:
-        id: 93lz5b8zmop17
+        id: 64vna8vx9rpjz
   /alfred/analytics/credit/transactions/chargeOffs:
     get:
       summary: List Credit Transaction ChargeOffs
@@ -898,7 +876,7 @@ paths:
         - $ref: '#/components/parameters/endDate'
         - $ref: '#/components/parameters/dateAggregation'
       x-stoplight:
-        id: 901smtssg46go
+        id: mohc29f3np3sz
   /alfred/analytics/credit/transactions/fees:
     get:
       summary: List Credit Transaction Fees
@@ -925,7 +903,7 @@ paths:
         - $ref: '#/components/parameters/endDate'
         - $ref: '#/components/parameters/dateAggregation'
       x-stoplight:
-        id: 5cjs06wmbph4w
+        id: zxtzy5e8mpbkn
   /alfred/analytics/credit/transactions/repayments:
     get:
       summary: List Credit Transaction Repayments
@@ -952,7 +930,7 @@ paths:
         - $ref: '#/components/parameters/endDate'
         - $ref: '#/components/parameters/dateAggregation'
       x-stoplight:
-        id: 1dyabif36yn0h
+        id: hl7pkvtta9j4o
   /alfred/analytics/credit/transactions/repayments/repaymentRate:
     get:
       summary: 'List Repayment Rates by Transaction Age, by Cohort'
@@ -1008,7 +986,7 @@ paths:
         - $ref: '#/components/parameters/endDate'
         - $ref: '#/components/parameters/origin'
       x-stoplight:
-        id: st1cgel8m2ixh
+        id: mbzhd9c7izpub
   '/alfred/accounts/{accountId}/applications/{applicationId}/transition':
     parameters:
       - $ref: '#/components/parameters/accountId'
@@ -1023,7 +1001,7 @@ paths:
           description: OK
       operationId: transitionApplicationState
       x-stoplight:
-        id: yosaavbra5f6g
+        id: 7kv3pgt2ifnk5
       description: change Application state
   '/alfred/accounts/{accountId}/applications/{applicationId}/decision':
     parameters:
@@ -1038,7 +1016,7 @@ paths:
           description: OK
       operationId: createApplicationDecision
       x-stoplight:
-        id: jauwrcrcmjanz
+        id: 9nj00l9c15lcr
       requestBody:
         content:
           application/json:
@@ -1080,7 +1058,7 @@ paths:
                         id: 00kg3iyku3isu
       operationId: listApplicationsForReview
       x-stoplight:
-        id: eljt96aj66zih
+        id: xqw9c9bhn232v
       description: List Applications ready for UW Review
       parameters:
         - $ref: '#/components/parameters/page'
@@ -1101,7 +1079,7 @@ paths:
           description: OK
       operationId: createApplicationRequestedDocument
       x-stoplight:
-        id: m84gs31securu
+        id: qmrva4he3w1u1
       description: Requests additional documentation from the applicant
       requestBody:
         content:
@@ -1177,7 +1155,7 @@ paths:
                   - data
       operationId: listApplicationRequestedDocumentForApplication
       x-stoplight:
-        id: ncu2o6zngoayl
+        id: n3wm9hk87qiac
       parameters:
         - $ref: '#/components/parameters/page'
         - $ref: '#/components/parameters/pageSize'
@@ -1202,7 +1180,7 @@ paths:
           description: OK
       operationId: updateApplicationRequestedDocument
       x-stoplight:
-        id: kri4en021khgl
+        id: f4a1erfuxma7h
       requestBody:
         content:
           application/json:
@@ -1266,7 +1244,7 @@ paths:
                   - note
       operationId: getApplicationRequestedDocument
       x-stoplight:
-        id: 0a9a902cqnwkz
+        id: mz6cdw0kat7ks
   /alfred/applications/documents/review:
     parameters: []
     get:
@@ -1331,7 +1309,7 @@ paths:
         - $ref: '#/components/parameters/pageSize'
         - $ref: '#/components/parameters/sort'
       x-stoplight:
-        id: jedj8hc4yc255
+        id: l9eki7x67k3h8
   /alfred/companies:
     get:
       summary: List api companies
@@ -1348,8 +1326,6 @@ paths:
         - $ref: '#/components/parameters/pageSize'
         - $ref: '#/components/parameters/sort'
         - $ref: '#/components/parameters/nextToken'
-      x-stoplight:
-        id: nkd96xnd02w7g
     post:
       summary: Search companies
       operationId: search-companies
@@ -1377,8 +1353,6 @@ paths:
                   description: The search value
               required:
                 - value
-      x-stoplight:
-        id: al4j3rx334hmr
   '/alfred/transactions/migrate/credit/{companyId}':
     post:
       summary: Migrate credit transactions to platform
@@ -1400,7 +1374,7 @@ paths:
                         id: tyodj5thn0ryx
                       type: string
       x-stoplight:
-        id: vw6pl6kbzru3w
+        id: er3opq39nfrmg
       description: Migrate credit transactions to platform
       tags:
         - Companies
@@ -1436,8 +1410,6 @@ paths:
                     format: uuid
                 required:
                   - accountId
-      x-stoplight:
-        id: h7plsjvclavwr
   /alfred/analytics/mercoa/invoices:
     get:
       summary: List Mercoa Invoices
@@ -1453,8 +1425,6 @@ paths:
         - $ref: '#/components/parameters/mercoaDateField'
       tags:
         - Analytics
-      x-stoplight:
-        id: 3wlswq1pde62r
   /alfred/analytics/mercoa/invoices/metrics:
     get:
       summary: Summary Statistics from Mercoa Invoices
@@ -1471,8 +1441,6 @@ paths:
         - $ref: '#/components/parameters/mercoaDateField'
       tags:
         - Analytics
-      x-stoplight:
-        id: fcbntpi1qm3z0
   '/alfred/analytics/mercoa/invoices/businesses/{businessId}':
     get:
       summary: List Mercoa Invoices by Business Id (Api Company Id)
@@ -1493,14 +1461,12 @@ paths:
           required: true
       tags:
         - Analytics
-      x-stoplight:
-        id: x9y8thjj94frf
 components:
   schemas:
     ServiceUsage:
       title: Service Usage
       x-stoplight:
-        id: kzhykyi2s5wfc
+        id: k58ajeicj865f
       type: object
       properties:
         service:
@@ -1515,7 +1481,7 @@ components:
     CreditStatementTape:
       title: Credit Statement Tape
       x-stoplight:
-        id: rlhjow0m6y4ze
+        id: 1z19f9contew3
       type: object
       properties:
         borrowerId:
@@ -1787,7 +1753,7 @@ components:
     ServiceCost:
       title: Service Cost
       x-stoplight:
-        id: 3ddp280hohdh7
+        id: mo6m7bhm90bcq
       type: object
       properties:
         service:
@@ -1800,7 +1766,7 @@ components:
     AccountSearchResult:
       title: AccountSearchResult
       x-stoplight:
-        id: w0w1xi39yzwj9
+        id: 3i7rew1llhplk
       type: object
       description: Represents a result from searching for accounts
       required:
@@ -1842,7 +1808,7 @@ components:
     ListOnboardingUserResult:
       title: ListOnboardingUserResult
       x-stoplight:
-        id: e0a0tzx647c3f
+        id: au4r83hi7xsxa
       type: object
       properties:
         id:
@@ -1886,7 +1852,7 @@ components:
     ListOnboardingUserTimeResult:
       title: ListOnboardingUserTimeResult
       x-stoplight:
-        id: z9fvbrtz5nt55
+        id: v015fzmv1z8eb
       type: object
       properties:
         userId:
@@ -1922,7 +1888,7 @@ components:
     ListOnboardingCardResult:
       title: ListOnboardingCardResult
       x-stoplight:
-        id: tflytz789g3wy
+        id: 8hq2m07gw9p8u
       type: object
       properties:
         id:
@@ -1971,7 +1937,7 @@ components:
     ApplicationCompleted:
       title: ApplicationCompleted
       x-stoplight:
-        id: u42wym9bgo02m
+        id: prodc5g1chaqv
       type: object
       properties:
         userId:
@@ -1995,7 +1961,7 @@ components:
     ListMarketingEmailResult:
       title: ListMarketingEmailResult
       x-stoplight:
-        id: 0ditr1g4px3lz
+        id: v4xaw90904f27
       type: object
       properties:
         event:
@@ -2038,7 +2004,7 @@ components:
     AggregatedCreditCardStatement:
       title: AggregatedCreditCardStatement
       x-stoplight:
-        id: a97yhkdzgbway
+        id: 6c868z3dwx4rb
       type: object
       description: fdf
       properties:
@@ -2101,7 +2067,7 @@ components:
     ListMetricResult:
       title: ListMetricResult
       x-stoplight:
-        id: 7jzd15f6zzo2l
+        id: n9abgbijc9sya
       type: object
       description: 'For a given metric, result is a timeseries of that metric with accompanying metadata'
       properties:
@@ -2128,7 +2094,7 @@ components:
     MetricHistory:
       title: MetricHistory
       x-stoplight:
-        id: oans9od547goz
+        id: 7l1fbrjo1asvq
       type: object
       properties:
         date:
@@ -2172,7 +2138,7 @@ components:
     CreditCardActivity:
       title: CreditCardActivity
       x-stoplight:
-        id: 5pswkjk1l5z8b
+        id: mx1kpl50tu6m0
       type: object
       properties:
         companyId:
@@ -2192,7 +2158,7 @@ components:
     RetentionCohort:
       title: RetentionCohort
       x-stoplight:
-        id: mvvj05rukatqp
+        id: gb0ahentkc5bk
       type: object
       properties:
         cohortDt:
@@ -2229,7 +2195,7 @@ components:
     ApplicationOffer:
       title: ApplicationOffer
       x-stoplight:
-        id: fi5nr6kd2g6m9
+        id: rirwycsg0hnq2
       type: object
       properties:
         details:
@@ -2248,7 +2214,7 @@ components:
     ApplicationForReview:
       title: ApplicationForReview
       x-stoplight:
-        id: tpij19ia880np
+        id: 4wyl0asgsfgri
       type: object
       properties:
         id:
@@ -2296,7 +2262,7 @@ components:
     CreditTransactionsAggregate:
       title: CreditTransactionsAggregate
       x-stoplight:
-        id: b1ewsfmawlcwi
+        id: ud3jvp02v9rcp
       type: object
       properties:
         companyId:
@@ -2317,7 +2283,7 @@ components:
     CreditTransactionsBookAggregate:
       title: CreditTransactionsBookAggregate
       x-stoplight:
-        id: u8wzq9ss5nltv
+        id: td5pol54r4prc
       allOf:
         - $ref: '#/components/schemas/CreditTransactionsAggregate'
         - type: object

@@ -1,6 +1,6 @@
 openapi: 3.1.0
 x-stoplight:
-  id: vbcgyng2vqijq
+  id: o0gfawhw3j6vo
 info:
   title: Ledger
   version: '1.0'
@@ -31,7 +31,7 @@ paths:
           description: OK
       operationId: postLedgerEntry
       x-stoplight:
-        id: hjpb3ahwxjwqe
+        id: cued4kbwbt4wf
       description: create a ledger-entry in the ledger
       requestBody:
         $ref: '#/components/requestBodies/CreateLedgerEntryBody'
@@ -40,7 +40,7 @@ components:
     CreditLithicAuthEntry:
       title: CreditLithicAuthEntry
       x-stoplight:
-        id: lyjbjmria7g7p
+        id: 1olp0bwmx0uuu
       type: object
       required:
         - type
@@ -53,7 +53,7 @@ components:
     CreditLithicAuthSettleEntry:
       title: CreditLithicAuthSettle
       x-stoplight:
-        id: xd2nla8kdyduk
+        id: upg6u0bhzlhsc
       type: object
       required:
         - type
@@ -67,7 +67,7 @@ components:
     CreditLithicRepaymentEntry:
       title: CreditLithicRepaymentEntry
       x-stoplight:
-        id: 0hn8zswod7dpr
+        id: 8ewx7wnq43veq
       type: object
       required:
         - type

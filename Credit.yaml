@@ -1,6 +1,6 @@
 openapi: 3.1.0
 x-stoplight:
-  id: qgc7jvd72atdx
+  id: g7lky0ls6y46f
 info:
   title: Credit
   version: '1.0'
@@ -65,7 +65,7 @@ paths:
                           id: y6x15fyl8zbxv
       operationId: decisionCreditTransactionAuthorization
       x-stoplight:
-        id: 6rauuekdxpd9p
+        id: pzalkld54yfab
       requestBody:
         content:
           application/json:
@@ -111,14 +111,12 @@ paths:
         - Legacy
       requestBody:
         $ref: '#/components/requestBodies/LegacySetLimit'
-      x-stoplight:
-        id: op4br88igs3y3
 components:
   schemas:
     LegacySetLimit:
       title: LegacySetLimit
       x-stoplight:
-        id: ronx9zfov1kdf
+        id: 2anvzt1atyl6d
       type: object
       properties:
         userId:
@@ -153,7 +151,7 @@ components:
     ApiOnboardingCompany:
       title: ApiOnboardingCompany
       x-stoplight:
-        id: n3fsb4z40nx7y
+        id: quae5zwtixvhv
       type: object
       properties:
         id:
@@ -305,7 +303,7 @@ components:
     ApiCompanyMemberBase:
       title: ApiCompanyMemberBase
       x-stoplight:
-        id: 4sm0cajt3hzor
+        id: k19ubt20mg7dr
       type: object
       properties:
         id:
@@ -411,7 +409,7 @@ components:
     ApiCompanyOwner:
       title: ApiCompanyOwner
       x-stoplight:
-        id: zgl0y45xgw68r
+        id: rqzud6bjeor3r
       allOf:
         - $ref: '#/components/schemas/ApiCompanyMemberBase'
         - type: object
@@ -427,7 +425,7 @@ components:
     ApiAddress:
       title: ApiAddress
       x-stoplight:
-        id: gj29v28q3l7t5
+        id: c07nmli8l80by
       type: object
       properties:
         line1:
@@ -462,7 +460,7 @@ components:
     ApiFinancialInstitution:
       title: ApiFinancialInstitution
       x-stoplight:
-        id: ladxmtxb3rvmk
+        id: hy5ukq70tpd9k
       type: object
       properties:
         id:
@@ -529,7 +527,7 @@ components:
     ApiFinancialInstitutionOwner:
       title: ApiFinancialInstitutionOwner
       x-stoplight:
-        id: nd2k1pnx6clu3
+        id: 9nqxjbcvle4rm
       type: object
       properties:
         name:
@@ -556,7 +554,7 @@ components:
     ApiFinancialInstitutionAddress:
       title: ApiFinancialInstitutionAddress
       x-stoplight:
-        id: eormmgvy6w1xq
+        id: ijhhw5w9ik27x
       type: object
       properties:
         line1:
@@ -588,7 +586,7 @@ components:
     ApiOptedProduct:
       title: ApiOptedProduct
       x-stoplight:
-        id: xz19vmun4hgsf
+        id: n2ng59n4zw6u4
       type: string
       enum:
         - BANKING
@@ -598,7 +596,7 @@ components:
     ApiCompanyAutopay:
       title: ApiCompanyAutopay
       x-stoplight:
-        id: l0rh9e1xk8sgs
+        id: xe1kjuk394www
       type: object
       properties:
         when:
@@ -629,7 +627,7 @@ components:
     ApiFrozenReason:
       title: ApiFrozenReason
       x-stoplight:
-        id: 2mc35kdank5u2
+        id: tfvf1z9rk5qe7
       type: string
       enum:
         - plaidUnlinked
@@ -641,7 +639,7 @@ components:
     ApiBusinessVertical:
       title: ApiBusinessVertical
       x-stoplight:
-        id: mx0fwetychngq
+        id: p1scy5er4qnrx
       type: string
       enum:
         - AgricultureForestryFishingOrHunting
@@ -677,7 +675,7 @@ components:
     ApiEarlypay:
       title: ApiEarlypay
       x-stoplight:
-        id: n8u3jrznrax5d
+        id: 7nvqql1p7llm9
       type: object
       properties:
         dates:
@@ -707,7 +705,7 @@ components:
     ApiCashback:
       title: ApiCashback
       x-stoplight:
-        id: gpd111h774ubq
+        id: ogszdx4mz56xm
       type: object
       properties:
         nearTermDays:
@@ -729,7 +727,7 @@ components:
     ApiSetLimitResponse:
       title: ApiSetLimitResponse
       x-stoplight:
-        id: hs2j0s81sel1b
+        id: gwkpy7ecf8tjv
       type: object
       properties:
         success:

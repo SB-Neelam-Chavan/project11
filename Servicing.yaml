@@ -1,6 +1,6 @@
 openapi: 3.1.0
 x-stoplight:
-  id: bjkdgg2vthc9e
+  id: f2e9jmmkmtq1c
 info:
   title: Servicing
   version: '1.0'
@@ -38,8 +38,6 @@ paths:
         - $ref: '#/components/parameters/nextToken'
         - $ref: '#/components/parameters/startDate'
         - $ref: '#/components/parameters/endDate'
-      x-stoplight:
-        id: tq6ibsthyts4t
     post:
       summary: Create a promocode
       operationId: create-promocodes
@@ -51,8 +49,6 @@ paths:
       description: Create a promotional code
       requestBody:
         $ref: '#/components/requestBodies/PromoCode'
-      x-stoplight:
-        id: 9bpslamob5ntt
   '/servicing/promocodes/{promoCodeId}':
     parameters:
       - $ref: '#/components/parameters/promoCodeId'
@@ -65,8 +61,6 @@ paths:
           $ref: '#/components/responses/PromoCode'
       operationId: get-promocodes
       description: 'Gets the specified promotional code. '
-      x-stoplight:
-        id: h9c0newduheq3
     patch:
       summary: Update PromoCode
       operationId: update-promocodes
@@ -78,8 +72,6 @@ paths:
       description: Updates the specified promotional code
       requestBody:
         $ref: '#/components/requestBodies/PromoCode'
-      x-stoplight:
-        id: 24k74ingi9xde
   '/servicing/promocodes/{promoCodeId}/accounts':
     parameters:
       - $ref: '#/components/parameters/promoCodeId'
@@ -97,8 +89,6 @@ paths:
         - $ref: '#/components/parameters/nextToken'
       operationId: list-accounts-with-promocode
       description: Retrieve a list of accounts associated with the specified promotional code
-      x-stoplight:
-        id: w5po1vb1si0qa
   /servicing/partnerships:
     get:
       summary: Get Partnership Dashboard
@@ -107,7 +97,7 @@ paths:
           $ref: '#/components/responses/PartnershipDashboardResponse'
       operationId: getPartnershipDashboard
       x-stoplight:
-        id: fxxbc58wiiw3l
+        id: 4ek6bn8n67ny2
       parameters:
         - schema:
             type: string
@@ -152,7 +142,7 @@ paths:
                       id: qgu76hhs8whop
       operationId: get-servicing-banking-application-unit-application-id
       x-stoplight:
-        id: i1jsox3rzvvzg
+        id: 6hff69uwivzpm
   '/servicing/banking/applications/company/{companyId}':
     parameters:
       - schema:
@@ -186,7 +176,7 @@ paths:
                         id: a9oj3vemnl8zh
       operationId: get-servicing-banking-application-flex-company-id
       x-stoplight:
-        id: 3cduyt5ry9mn7
+        id: vil3xw5qu4amf
   '/servicing/banking/application/customer/{unitCustomerId}':
     parameters:
       - schema:
@@ -216,7 +206,7 @@ paths:
                       id: ckrtnc76t3aus
       operationId: get-servicing-banking-applications-unit-customer-id
       x-stoplight:
-        id: 8hafupmkqypbt
+        id: js3calg31sl1v
   '/servicing/accounts/{id}/promocodes/{promocodeId}':
     parameters:
       - schema:
@@ -240,8 +230,6 @@ paths:
       description: Disassociates a promo code with an account
       tags:
         - PromoCodes
-      x-stoplight:
-        id: q4opmmgs7m9a1
     post:
       summary: Link Promo Code
       operationId: link-account-promocode
@@ -251,8 +239,6 @@ paths:
       description: Links promo code to a company/account
       tags:
         - PromoCodes
-      x-stoplight:
-        id: 27s2l4e4zpkjb
   '/servicing/promocodes/code/{code}':
     parameters:
       - schema:
@@ -271,8 +257,6 @@ paths:
       operationId: get-promocode-by-value
       description: This will look up and return the promocode associated with the value specified. It does not require authentication and can be used within the application flow.
       security: []
-      x-stoplight:
-        id: ao0ivo6v7rh48
   '/servicing/authorize/{authenticationId}/ratelimit':
     parameters:
       - schema:
@@ -291,8 +275,6 @@ paths:
       tags:
         - Authorize
       description: Clear the password rate limit of the specified authentication
-      x-stoplight:
-        id: g96salxxeusdr
   /servicing/accounts/phones/allowlist:
     get:
       summary: Get Phone Allow List
@@ -308,8 +290,6 @@ paths:
         - $ref: '#/components/parameters/pageSize'
         - $ref: '#/components/parameters/sort'
         - $ref: '#/components/parameters/nextToken'
-      x-stoplight:
-        id: errnkid5slgz8
     parameters: []
     post:
       summary: Add Phone Rule
@@ -322,8 +302,6 @@ paths:
       description: Add a phone to either the allow or block list rule
       requestBody:
         $ref: '#/components/requestBodies/AccountPhoneRule'
-      x-stoplight:
-        id: 2rm67iudk7gqo
   '/servicing/companies/point-in-time/{companyId}':
     parameters:
       - $ref: '#/components/parameters/companyId'
@@ -347,8 +325,6 @@ paths:
                     $ref: ./models/Company.yaml
                     x-stoplight:
                       id: 17exlko4s8n24
-      x-stoplight:
-        id: 1002yx5egl5n3
   /servicing/companies/point-in-time:
     parameters:
       - $ref: '#/components/parameters/asOf'
@@ -373,14 +349,12 @@ paths:
                       $ref: ./models/Company.yaml
                       x-stoplight:
                         id: 342kxlsbg70yu
-      x-stoplight:
-        id: 24cfsio2a1ue8
 components:
   schemas:
     ApplicationWithPartnership:
       title: ApplicationWithPartnership
       x-stoplight:
-        id: ly3qsb4pphabt
+        id: 8vumkrzy439i3
       type: object
       required:
         - businessId
@@ -418,7 +392,7 @@ components:
     BankingApplication:
       title: BankingApplication
       x-stoplight:
-        id: b39euwgtdmiog
+        id: n7vlh2d5252d3
       type: object
       required:
         - id
@@ -451,7 +425,7 @@ components:
     AccountPhoneRule:
       title: Phone Rule
       x-stoplight:
-        id: 3qxijfr5w43e1
+        id: a96glx9ecx03m
       type: object
       description: Represents a phone allow list rule
       properties:

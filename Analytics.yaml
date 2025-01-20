@@ -1,6 +1,6 @@
 openapi: 3.1.0
 x-stoplight:
-  id: jauph5urr4jnq
+  id: fgu9qotjzdddk
 info:
   title: Analytics
   version: '1.0'
@@ -31,7 +31,7 @@ paths:
           description: OK
       operationId: get-scrape-flex-api-plaid-transfer-sweeps
       x-stoplight:
-        id: ne9t32dipuc9h
+        id: z1ytb2xb1bsf7
       description: Endpoint to scrape and store data from /plaid/transferSweeps
     parameters: []
   /analytics/scrape/flexApi/lithic/treasury:
@@ -44,7 +44,7 @@ paths:
           description: OK
       operationId: get-scrape-flexApi-lithic-treasury
       x-stoplight:
-        id: 16cy7oksnjacr
+        id: 85nzd3q9ohvns
       description: Endpoint to scrape and store data from /lithic/treasury
   /analytics/scrape/flexApi/servicing/bookSummary:
     get:
@@ -56,7 +56,7 @@ paths:
           description: OK
       operationId: get-scrape-flexApi-servicing-bookSummary
       x-stoplight:
-        id: kqtiggw6woghr
+        id: 13p4l43avlaem
       description: Endpoint to scrape and store data from /servicing/bookSummary
   /analytics/scrape/hubspot/account/users:
     get:
@@ -68,7 +68,7 @@ paths:
           description: OK
       operationId: get-scrape-hubspot-account-users
       x-stoplight:
-        id: pyxdztay1g166
+        id: 02tqe4g4pqnrt
       description: Endpoint to scrape and store data for Flex's Hubspot account users
   /analytics/scrape/hubspot/goals:
     get:
@@ -80,7 +80,7 @@ paths:
           description: OK
       operationId: get-scrape-hubspot-goals
       x-stoplight:
-        id: g78hbzu8z4nes
+        id: 82pop7y6vadro
       description: Endpoint to scrape and store data for Flex's Hubspot goals
   /analytics/scrape/hubspot/companies:
     get:
@@ -92,7 +92,7 @@ paths:
           description: OK
       operationId: get-scrape-hubspot-companies
       x-stoplight:
-        id: 8n0jiqgf0u141
+        id: 11wer2q3wrqer
       description: Endpoint to scrape and store data for Flex's Hubspot companies
   /analytics/scrape/hubspot/contacts:
     get:
@@ -104,7 +104,7 @@ paths:
           description: OK
       operationId: get-scrape-hubspot-contacts
       x-stoplight:
-        id: r02h7f8cic2fb
+        id: 64qed7y7preif
       description: Endpoint to scrape and store data for Flex's Hubspot contacts
   /analytics/scrape/hubspot/deals:
     get:
@@ -116,7 +116,7 @@ paths:
           description: OK
       operationId: get-scrape-hubspot-deals
       x-stoplight:
-        id: kqgplfolw7saa
+        id: 16wqa4t3aieng
       description: Endpoint to scrape and store data for Flex's Hubspot deals
   /analytics/scrape/hubspot/monthlySpend:
     get:
@@ -128,7 +128,7 @@ paths:
           description: OK
       operationId: get-scrape-hubspot-monthly-spend
       x-stoplight:
-        id: 6nhdtevisy2ao
+        id: 83yqv3q0reqfp
       description: Endpoint to scrape and store data for Flex's Hubspot monthlySpend
   /analytics/scrape/hubspot/events:
     get:
@@ -140,7 +140,7 @@ paths:
           description: OK
       operationId: get-scrape-hubspot-events
       x-stoplight:
-        id: 8qoga2ksbnurs
+        id: 44zze4t6oolae
       description: Endpoint to scrape and store data for Flex's Hubspot events
   /analytics/scrape/hubspot/onboarding:
     get:
@@ -152,7 +152,7 @@ paths:
           description: OK
       operationId: get-scrape-hubspot-onboarding
       x-stoplight:
-        id: iloyj8ey6fe4x
+        id: 92por1q4yepza
       description: Endpoint to scrape and store data for Flex's Hubspot onboarding
   /analytics/scrape/hubspot/accountManagement:
     get:
@@ -164,7 +164,7 @@ paths:
           description: OK
       operationId: get-scrape-hubspot-account-management
       x-stoplight:
-        id: 9y79bw9r0rl86
+        id: 02liz7z5aufqe
       description: Endpoint to scrape and store data for Flex's Hubspot accountManagement
   '/analytics/scrape/banking/accounts/{bankAccountId}':
     parameters:
@@ -178,14 +178,14 @@ paths:
           description: OK
       operationId: get-scrape-banking-account
       x-stoplight:
-        id: 49y3vcxnm0w7e
+        id: 19zil7z5e9fzr
       description: Endpoint to scrape and store data for Flex's Card Funding Account
 components:
   schemas:
     ListMetricResult:
       title: ListMetricResult
       x-stoplight:
-        id: fcxjbvgxg5eqq
+        id: ubpl71qztdb5z
       type: object
       description: 'For a given metric, result is a timeseries of that metric with accompanying metadata'
       properties:
@@ -212,7 +212,7 @@ components:
     MetricHistory:
       title: MetricHistory
       x-stoplight:
-        id: yazlkfjerbqzn
+        id: 24wwdkbec28kl
       type: object
       properties:
         date:

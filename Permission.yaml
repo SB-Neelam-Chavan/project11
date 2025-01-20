@@ -1,6 +1,6 @@
 openapi: 3.1.0
 x-stoplight:
-  id: w5rchcxla3yzj
+  id: 0bh9pe6qhiryh
 info:
   title: Permission
   version: '1.0'
@@ -32,7 +32,7 @@ paths:
         - Permission
       operationId: addAccountRoleToAuthentication
       x-stoplight:
-        id: jtn1auwpvnhyn
+        id: 2eq3xuf31aain
       requestBody:
         $ref: '#/components/requestBodies/RoleTargetBody'
       responses:
@@ -47,7 +47,7 @@ paths:
           description: OK
       operationId: removeAccountRoleFromAuthentication
       x-stoplight:
-        id: vtk0xqzct27t7
+        id: af18sp23bg2ta
       description: Remove an account level role from an authentication.
       requestBody:
         content:
@@ -71,7 +71,7 @@ paths:
         '200':
           description: OK
       x-stoplight:
-        id: 89tk2obg61huo
+        id: eydoe4y9vu12j
     delete:
       summary: Remove flex role from authentication
       tags:
@@ -81,7 +81,7 @@ paths:
           description: OK
       operationId: removeFlexRoleFromAuthentication
       x-stoplight:
-        id: 2jnxp8sgs4z1s
+        id: dbq3iblxxwno9
       description: Remove a flex level role from an authentication
       requestBody:
         content:
@@ -112,14 +112,14 @@ paths:
                     id: ntnwpwght568u
       operationId: listAccountPermissionsOnAccount
       x-stoplight:
-        id: 010trk0i9y9at
+        id: 83ml8zk8thasa
       description: 'List the permissions that are on and account. '
 components:
   schemas:
     RoleTarget:
       title: RoleTarget
       x-stoplight:
-        id: qwy5ln143r0uo
+        id: l26ict2nq38m1
       type: object
       description: |-
         Model to help target an authentication for permissions.
@@ -138,7 +138,7 @@ components:
     AuthenticationRole:
       title: AuthenticationRole
       x-stoplight:
-        id: blburklkzuksm
+        id: 3ixfqia53zn2g
       type: object
       required:
         - userName

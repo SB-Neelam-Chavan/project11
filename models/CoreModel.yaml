@@ -1,6 +1,6 @@
 title: Core
 x-stoplight:
-  id: hs3if24hhktob
+  id: gu9b7eymajynz
 type: object
 x-internal: true
 description: Represents core properties
@@ -10,22 +10,16 @@ properties:
     format: date-time
     description: The created timestamp
     readOnly: true
-    x-stoplight:
-      id: jtg2a311kyly0
   lastModifiedAt:
     type: string
     format: date-time
     description: The last modified timestamp
     readOnly: true
-    x-stoplight:
-      id: cii0olrpj3478
   lastModifiedBy:
     type: string
     format: uuid
     description: The identifier of the last modifier
     readOnly: true
-    x-stoplight:
-      id: o68oixxhib4vx
 required:
   - createdAt
   - lastModifiedAt
